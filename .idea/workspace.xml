@@ -4,7 +4,6 @@
     <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="Constructor de Día hecho  Día terminado">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Dia.java" afterPath="$PROJECT_DIR$/src/Clases/Dia.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Mesa.java" afterPath="$PROJECT_DIR$/src/Clases/Mesa.java" />
     </list>
     <ignored path="ElePizzaLP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +29,11 @@
       <file leaf-file-name="Dia.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Clases/Dia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#1455#1456#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -713,7 +712,7 @@
       <updated>1461872620672</updated>
       <workItem from="1461872628811" duration="4401000" />
       <workItem from="1461951127391" duration="16959000" />
-      <workItem from="1462382405015" duration="790000" />
+      <workItem from="1462382405015" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="Agregando atributos a día, e instanciando metodos gets y sets">
       <created>1462111678249</created>
@@ -722,11 +721,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462111678249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Constructor de Día hecho  Día terminado">
+      <created>1462383225952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1462383225952</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22150000" />
+    <option name="totallyTimeSpent" value="22313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -786,8 +792,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,8 +826,8 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -961,11 +967,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Clases/Dia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,5 @@
 package Clases;
 
-/**
- * Created by Neekuu on 28-04-2016.
- */
 public class Dia {
     private int clientesPotenciales;
     private int clientesSentados;
@@ -14,15 +11,15 @@ public class Dia {
     private int costo;
     private int resultado;
     public Dia(){
-        setClientesAtendidos(0);
-        setClientesSentados(0);
-        setClientesFelices(0);
-        setClientesPotenciales(0);
-        setClientesRecibidos(0);
-        setCosto(0);
-        setIngreso(0);
-        setSueldo(0);
-        setResultado(0);
+        clientesAtendidos=0;
+        clientesSentados=0;
+        clientesFelices=0;
+        clientesPotenciales=0;
+        clientesRecibidos=0;
+        costo=0;
+        ingreso=0;
+        sueldo=0;
+        resultado=0;
     }
 
     public int getClientesAtendidos() {
