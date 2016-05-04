@@ -13,18 +13,16 @@ public class Dia {
     private int ingreso;
     private int costo;
     private int resultado;
-    void Dia(int CP ,int CS,int CA,int CR,
-             int CF ,int Sueldo,int Ingreso,int Costo,int Resultado){
-
-        clientesPotenciales=CP;
-        clientesSentados=CS;
-        clientesAtendidos=CA;
-        clientesRecibidos=CR;
-        clientesFelices=CF;
-        sueldo=Sueldo;
-        ingreso=Ingreso;
-        costo=Costo;
-        resultado=Resultado;
+    public Dia(){
+        setClientesAtendidos(0);
+        setClientesSentados(0);
+        setClientesFelices(0);
+        setClientesPotenciales(0);
+        setClientesRecibidos(0);
+        setCosto(0);
+        setIngreso(0);
+        setSueldo(0);
+        setResultado(0);
     }
 
     public int getClientesAtendidos() {
