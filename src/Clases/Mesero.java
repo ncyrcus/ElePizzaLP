@@ -6,19 +6,15 @@ package Clases;
 public class  Mesero implements Empleado {
 
 
-
     @Override
-    public void despedir() {
+    public void pagoSueldo(Dia dia) {
+        dia.setSueldo(dia.getSueldo()+this.Sueldo);
 
     }
 
     @Override
-    public void pagoSueldo() {
-
-    }
-
-    @Override
-    public void realizarEmpleo() {
+    public void realizarEmpleo(Dia dia) {
+        dia.setClientesRecibidos(dia.getClientesRecibidos()+150);
 
     }
 

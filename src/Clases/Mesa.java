@@ -3,6 +3,7 @@ package Clases;
 /**
  * Created by Neekuu on 28-04-2016.
  */
+
 public abstract class Mesa {
     private static int cantidadMesa=0;
     private int capacidad;
