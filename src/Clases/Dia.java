@@ -13,16 +13,16 @@ public class Dia {
 	private double resultado; // esto es ganancia o perdida?
 	
 	public Dia(){ //constructor
-		this.popularidad=0.0;
-		this.clientes_potenciales= 0.0;
-		this.clientes_sentados=0;
-		this.clientes_atendidos=0;
-		this.clientes_que_reciben_plato=0;
-		this.clientes_felices=0;
-		this.sueldos=0.0;
-		this.ingreso=0.0;
-		this.costo=0.0;
-		this.resultado=0.0;
+		popularidad=0.0;
+		clientes_potenciales= 0.0;
+		clientes_sentados=0;
+		clientes_atendidos=0;
+		clientes_que_reciben_plato=0;
+		clientes_felices=0;
+		sueldos=0.0;
+		ingreso=0.0;
+		costo=0.0;
+		resultado=0.0;
 	}
 	
 	//se agregan getters y setters 
