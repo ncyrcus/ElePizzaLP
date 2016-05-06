@@ -8,3 +8,6 @@ public abstract class Decoracion {
     abstract void comprarDecoracion();
     abstract void venderDecoracion();
 }
+
+
+

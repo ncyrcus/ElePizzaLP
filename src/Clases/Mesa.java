@@ -1,10 +1,7 @@
-
-/**
- * Created by Neekuu on 28-04-2016.
- */
+package Clases;
 
 public abstract class Mesa {
-    protected static int cantidadMesa=0;
+    static int cantidadMesa=0;
     private static int capacidad=9;
 
     public abstract void contabilizar(Dia dia);
