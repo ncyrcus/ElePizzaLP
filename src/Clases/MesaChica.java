@@ -1,5 +1,5 @@
 package Clases;
-
+//
 public class MesaChica extends Mesa {
     private int capacidad = 5;
     private static int cantidadMesasChicas=0;
