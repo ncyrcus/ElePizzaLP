@@ -5,8 +5,17 @@ package Clases;
  */
 
 public class Juego {
-    public class main{
+    public static void main(String[]args){
 
+      /**
+       * se crean estas instancias de las clases dia y mesachica para ver si funciona, en mi escritorio si funciona
+       * pero no me resulta cuando lo trato de ejecutar con el package Clases.
+       *
+       */
+
+      Dia dia1 = new Dia();
+    	MesaChica mesita = new MesaChica();
+      mesita.comprarMesa(dia1);
 
 
     }

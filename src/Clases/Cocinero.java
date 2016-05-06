@@ -4,7 +4,7 @@ package Clases;
  * Created by Neekuu on 28-04-2016.
  */
 public class Cocinero implements Empleado {
-    static int Sueldo=666;
+    static int Sueldo=1000;
 
     @Override
     public void pagoSueldo(Dia dia) {

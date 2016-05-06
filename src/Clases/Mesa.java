@@ -5,15 +5,11 @@ package Clases;
  */
 
 public abstract class Mesa {
-    private static int cantidadMesa=0;
-    private int capacidad;
+    protected static int cantidadMesa=0;
+    private static int capacidad=9;
 
+    public abstract void contabilizar(Dia dia);
+    public abstract void comprarMesa(Dia dia);
+    public abstract void venderMesa(Dia dia);
 
-
-    public abstract void contabilizar(); //con un parametro llamado dia que debe ser una clase
-    public abstract void comprarMesa();
-    public abstract void venderMesa();
-    public void algo(int cantidadMesa){
-        this.cantidadMesa=cantidadMesa;
-    }
 }

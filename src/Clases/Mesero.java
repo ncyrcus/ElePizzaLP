@@ -5,6 +5,7 @@ package Clases;
  */
 public class  Mesero implements Empleado {
 
+    static int Sueldo=500;
 
     @Override
     public void pagoSueldo(Dia dia) {
