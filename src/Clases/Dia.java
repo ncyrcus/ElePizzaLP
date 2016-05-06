@@ -1,15 +1,16 @@
-package Clases;
+
 
 public class Dia {
-    private int clientesPotenciales;
+    private double clientesPotenciales;
     private int clientesSentados;
     private int clientesAtendidos;
     private int clientesRecibidos;
     private int clientesFelices;
-    private int sueldo;
-    private int ingreso;
-    private int costo;
-    private int resultado;
+    private double sueldo;
+    private double ingreso;
+    private double costo;
+    private double resultado;
+
     public Dia(){
         clientesAtendidos=0;
         clientesSentados=0;
@@ -30,7 +31,7 @@ public class Dia {
         return clientesFelices;
     }
 
-    public int getClientesPotenciales() {
+    public double getClientesPotenciales() {
         return clientesPotenciales;
     }
 
@@ -42,19 +43,19 @@ public class Dia {
         return clientesSentados;
     }
 
-    public int getCosto() {
+    public double getCosto() {
         return costo;
     }
 
-    public int getIngreso() {
+    public double getIngreso() {
         return ingreso;
     }
 
-    public int getResultado() {
+    public double getResultado() {
         return resultado;
     }
 
-    public int getSueldo() {
+    public double getSueldo() {
         return sueldo;
     }
 
@@ -66,7 +67,7 @@ public class Dia {
         this.clientesFelices = clientesFelices;
     }
 
-    public void setClientesPotenciales(int clientesPotenciales) {
+    public void setClientesPotenciales(double clientesPotenciales) {
         this.clientesPotenciales = clientesPotenciales;
     }
 
@@ -78,19 +79,19 @@ public class Dia {
         this.clientesSentados = clientesSentados;
     }
 
-    public void setCosto(int costo) {
+    public void setCosto(double costo) {
         this.costo = costo;
     }
 
-    public void setIngreso(int ingreso) {
+    public void setIngreso(double ingreso) {
         this.ingreso = ingreso;
     }
 
-    public void setResultado(int resultado) {
+    public void setResultado(double resultado) {
         this.resultado = resultado;
     }
 
-    public void setSueldo(int sueldo) {
+    public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
 

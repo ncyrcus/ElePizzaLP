@@ -1,4 +1,3 @@
-package Clases;
 
 /**
  * Created by Neekuu on 28-04-2016.
@@ -40,10 +39,10 @@ public class MesaChica extends Mesa {
         System.out.println("No se pueden vender mas mesas");
       }
     }
-    
+
     public void contabilizar(Dia dia)
     {
-      dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasChicas*10));
+      dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasChicas*capacidad*10));
     }
 
 }
