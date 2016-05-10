@@ -6,11 +6,11 @@ public class MesaMediana extends Mesa {
   private double costoMesaMediana=1000.0;
 
 
-  public void comprarMesa(Dia dia)
+  public void comprarMesa(Local local)
   {
     if (cantidadMesa<=9)
     {
-      dia.setCosto(dia.getCosto()+ costoMesaMediana); //se agrega la compra a los costos del dia
+      local.setDineroActual(local.getDineroActual()+ costoMesaMediana); //se agrega la compra a los costos del dia
       cantidadMesa+=1; //se aumenta en 1 la cantidad de mesas del local
       cantidadMesasMedianas+=1; //se aumenta en 1 la cantidad de mesas chicas compradas
       System.out.println("Se ha comprado una mesa mediana, actualmente hay " + cantidadMesasMedianas + " mesas medianas");
@@ -22,11 +22,11 @@ public class MesaMediana extends Mesa {
 
   }
 
-  public void venderMesa(Dia dia)
+  public void venderMesa(Local local)
   {
     if(cantidadMesa>0)
     {
-      dia.setCosto(dia.getCosto()-costoMesaMediana); //se quita una compra a los costos del dia
+      local.setDineroActual(local.getDineroActual()-costoMesaMediana-200); //se quita una compra a los costos del dia
       cantidadMesa-=1;//se dsiminuye en 1 la cantidad de mesas del local
       cantidadMesasMedianas-=1; //se disminuye en 1 la cantidad de mesas chicas compradas
       System.out.println("Se ha vendido una mesa mediana, actualmente hay " + cantidadMesasMedianas + " mesas medianas");
