@@ -17,6 +17,7 @@ public class Local {
     listaDias = new ArrayList<Dia>();
     listaEmpleados = new ArrayList<Empleado>();
     listaMesas = new ArrayList<Mesa>();
+    listaDecoraciones = new ArrayList<Decoracion>();
   }
 
   public void mejorarComida(Comida comidita)
@@ -25,7 +26,7 @@ public class Local {
     comidita.setCostoPreparacion(comidita.getCostoPreparacion()+ 10.0);
     System.out.println("Se ha mejorado la comida del local, ahora se vende a : " + comidita.getPrecioVenta()+" pesos");
   }
-  
+
   public double getPopularidad() {
       return popularidad;
   }

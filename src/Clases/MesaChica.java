@@ -27,7 +27,7 @@ public class MesaChica extends Mesa {
       if(cantidadMesa>0)
       {
         dia.setCosto(dia.getCosto()-costoMesaChica); //se quita una compra a los costos del dia
-        cantidadMesa-=1;//se dsiminuye en 1 la cantidad de mesas del local
+        cantidadMesa-=1;//se disminuye en 1 la cantidad de mesas del local
         cantidadMesasChicas-=1; //se disminuye en 1 la cantidad de mesas chicas compradas
         System.out.println("Se ha vendido una mesa chica, actualmente hay " + cantidadMesasChicas + " mesas chicas");
       }

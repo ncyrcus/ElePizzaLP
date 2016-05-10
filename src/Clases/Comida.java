@@ -7,12 +7,10 @@ public class Comida {
 
   private double precioVenta;
   private double costoPreparacion;
-  private int nivel;
 
   public Comida(){
     precioVenta=40.0;
     costoPreparacion=10.0;
-    nivel =1;
   }
 
   public double getPrecioVenta() {
@@ -29,5 +27,7 @@ public class Comida {
   public void setCostoPreparacion(double costoPreparacion){
       this.costoPreparacion=costoPreparacion;
   }
+
+
 
 }

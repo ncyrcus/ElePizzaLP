@@ -8,7 +8,7 @@ public class Cocinero implements Empleado {
 
     @Override
     public void pagoSueldo(Dia dia) {
-        dia.setSueldo(dia.getSueldo()+this.Sueldo);
+        dia.setSueldo(dia.getSueldo()+ Sueldo);
 
     }
 
