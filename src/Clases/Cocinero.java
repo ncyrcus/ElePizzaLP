@@ -1,4 +1,4 @@
-
+package Clases;
 
 /**
  * Created by Neekuu on 28-04-2016.
@@ -8,7 +8,7 @@ public class Cocinero implements Empleado {
 
     @Override
     public void pagoSueldo(Dia dia) {
-        dia.setSueldo(dia.getSueldo()+ Sueldo);
+        dia.setSueldo(dia.getSueldo()+Sueldo);
 
     }
 

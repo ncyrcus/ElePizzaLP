@@ -13,6 +13,7 @@ public class Local {
 
   public Local()
   {
+    dineroActual=100000;
     popularidad = 0.0;
     listaDias = new ArrayList<Dia>();
     listaEmpleados = new ArrayList<Empleado>();
@@ -38,9 +39,33 @@ public class Local {
   public void setPopularidad(double popularidad){
       this.popularidad=popularidad;
   }
+  public Dia getDiaActual( ){
+      return listaDias.get(listaDias.size()-1);
+  }
 
   public void setDineroActual(double dineroActual){
       this.dineroActual=dineroActual;
+  }
+  public void contratarMesero(){
+      Empleado a=new Mesero();
+      listaEmpleados.add(a);
+  }
+  public void contratarCocinero(){
+      Empleado b=new Cocinero();
+      listaEmpleados.add(b);
+  }
+  public void nuevoDia(){
+      Dia dia=new Dia();
+      listaDias.add(dia);
+
+  }
+  public void pagarAEmpleados(){
+      for(int i= 0; i<listaEmpleados.size();i++){
+          listaEmpleados.get(i).pagoSueldo(getDiaActual());
+      }
+  }
+  public void comprarMesa(){
+
   }
 
 
