@@ -3,12 +3,13 @@ import java.util.ArrayList;
 
 public class Local {
 
-  private double pupularidad;
+  private double popularidad;
   private double dineroActual;
 
   private ArrayList<Dia> listaDias;
   private ArrayList<Empleado> listaEmpleados;
   private ArrayList<Mesa> listaMesas;
+  private ArrayList<Decoracion> listaDecoraciones;
 
   public Local()
   {
@@ -22,7 +23,7 @@ public class Local {
   {
     comidita.setPrecioVenta(comidita.getPrecioVenta()+ 20.0);
     comidita.setCostoPreparacion(comidita.getCostoPreparacion()+ 10.0);
-    System.out.println("Se ha mejorado la comida del local, ahora se vende a : " + comidita.getPrecioVenta() " pesos");
+    System.out.println("Se ha mejorado la comida del local, ahora se vende a : " + comidita.getPrecioVenta()+" pesos");
   }
   
   public double getPopularidad() {

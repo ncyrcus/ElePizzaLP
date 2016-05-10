@@ -5,13 +5,16 @@ package Clases;
  */
 public class DecoracionRegular extends  Decoracion {
 
-    @Override
-    void comprarDecoracion() {
-
+    private static int costoDecoracionRegular=500;
+    private static double popularidad = 0.25;
+    public void venderDecoracion(Local local) {
+        local.setDineroActual(local.getDineroActual()+costoDecoracionRegular-75);
+        local.setPopularidad(local.getPopularidad()-popularidad);
     }
 
     @Override
-    void venderDecoracion() {
-
+    public void comprarDecoracion(Local local) {
+        local.setDineroActual(local.getDineroActual()-costoDecoracionRegular);
+        local.setPopularidad(local.getPopularidad()+popularidad);
     }
 }

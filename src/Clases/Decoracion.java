@@ -3,8 +3,8 @@ package Clases;
 
 public abstract class Decoracion {
 
-    abstract void comprarDecoracion(Dia dia);
-    abstract void venderDecoracion(Dia dia);
+    abstract void comprarDecoracion(Local local);
+    abstract void venderDecoracion(Local local);
 }
 
 

@@ -63,8 +63,8 @@ public class Dia {
         this.clientesAtendidos = clientesAtendidos;
     }
 
-    public void setClientesFelices(int clientesFelices) {
-        this.clientesFelices = clientesFelices;
+    public void setClientesFelices() {
+        this.clientesFelices = Math.min((int)clientesPotenciales,Math.min(clientesAtendidos,Math.min(clientesRecibidos,clientesSentados)));
     }
 
     public void setClientesPotenciales(double clientesPotenciales) {
