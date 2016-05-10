@@ -15,12 +15,12 @@ public class Dia {
         clientesAtendidos=0;
         clientesSentados=0;
         clientesFelices=0;
-        clientesPotenciales=0;
+        clientesPotenciales=0.0;
         clientesRecibidos=0;
-        costo=0;
-        ingreso=0;
-        sueldo=0;
-        resultado=0;
+        costo=0.0;
+        ingreso=0.0;
+        sueldo=0.0;
+        resultado=0.0;
     }
 
     public int getClientesAtendidos() {

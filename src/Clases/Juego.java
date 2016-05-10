@@ -14,9 +14,6 @@ public class Juego {
        */
 
       Dia dia1 = new Dia();
-    	MesaChica mesita = new MesaChica();
-      mesita.comprarMesa(dia1);
-
 
     }
 

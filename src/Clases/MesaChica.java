@@ -10,10 +10,16 @@ public class MesaChica extends Mesa {
     {
       if (cantidadMesa<=9)
       {
-        local.setDineroActual(local.getDineroActual()+ costoMesaChica-100); //se agrega la compra a los costos del dia
+        if(local.getDineroActual()>0)
+        {
+        local.setDineroActual(local.getDineroActual()-costoMesaChica); //se agrega la compra a los costos del dia
         cantidadMesa+=1; //se aumenta en 1 la cantidad de mesas del local
         cantidadMesasChicas+=1; //se aumenta en 1 la cantidad de mesas chicas compradas
         System.out.println("Se ha comprado una mesa chica, actualmente hay " + cantidadMesasChicas + " mesas chicas");
+        }
+        else{
+          System.out.println("No se puede comprar una mesa chica");
+        }
       }
       else
       {
@@ -26,13 +32,10 @@ public class MesaChica extends Mesa {
     {
       if(cantidadMesa>0)
       {
-<<<<<<< HEAD
-        dia.setCosto(dia.getCosto()-costoMesaChica); //se quita una compra a los costos del dia
+        local.setDineroActual(local.getDineroActual()- costoMesaChica-100); //se quita una compra a los costos del dia
         cantidadMesa-=1;//se disminuye en 1 la cantidad de mesas del local
-=======
         local.setDineroActual(local.getDineroActual()-costoMesaChica); //se quita una compra a los costos del dia
         cantidadMesa-=1;//se dsiminuye en 1 la cantidad de mesas del local
->>>>>>> f61ba93ad91ba5c6b12dfce7b2bd8370f2be1d9a
         cantidadMesasChicas-=1; //se disminuye en 1 la cantidad de mesas chicas compradas
         System.out.println("Se ha vendido una mesa chica, actualmente hay " + cantidadMesasChicas + " mesas chicas");
       }
@@ -49,6 +52,6 @@ public class MesaChica extends Mesa {
     }
 
     public int getCapacidad() {
-        return capacidad;
+      return capacidad;
     }
 }

@@ -10,10 +10,16 @@ public class MesaMediana extends Mesa {
   {
     if (cantidadMesa<=9)
     {
-      local.setDineroActual(local.getDineroActual()+ costoMesaMediana); //se agrega la compra a los costos del dia
+      if(local.getDineroActual()>0)
+      {
+      local.setDineroActual(local.getDineroActual()-costoMesaMediana); //se agrega la compra a los costos del dia
       cantidadMesa+=1; //se aumenta en 1 la cantidad de mesas del local
       cantidadMesasMedianas+=1; //se aumenta en 1 la cantidad de mesas chicas compradas
       System.out.println("Se ha comprado una mesa mediana, actualmente hay " + cantidadMesasMedianas + " mesas medianas");
+      }
+      else{
+        System.out.println("No se pueden comprar mas mesas medianas");
+      }
     }
     else
     {
@@ -26,7 +32,7 @@ public class MesaMediana extends Mesa {
   {
     if(cantidadMesa>0)
     {
-      local.setDineroActual(local.getDineroActual()-costoMesaMediana-200); //se quita una compra a los costos del dia
+      local.setDineroActual(local.getDineroActual()+costoMesaMediana-200); //se quita una compra a los costos del dia
       cantidadMesa-=1;//se dsiminuye en 1 la cantidad de mesas del local
       cantidadMesasMedianas-=1; //se disminuye en 1 la cantidad de mesas chicas compradas
       System.out.println("Se ha vendido una mesa mediana, actualmente hay " + cantidadMesasMedianas + " mesas medianas");
@@ -43,6 +49,7 @@ public class MesaMediana extends Mesa {
     dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasMedianas*capacidad*10));
   }
   public int getCapacidad() {
-        return capacidad;
-    }
+    return capacidad;
+  }
+  
 }
