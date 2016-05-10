@@ -1,4 +1,4 @@
-package Clases;
+
 //
 public class MesaMediana extends Mesa {
   private int capacidad = 10;
@@ -51,5 +51,5 @@ public class MesaMediana extends Mesa {
   public int getCapacidad() {
     return capacidad;
   }
-  
+
 }

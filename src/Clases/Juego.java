@@ -1,4 +1,4 @@
-package Clases;
+
 /**
  * Created by Neekuu on 28-04-2016.
  */
@@ -13,7 +13,9 @@ public class Juego {
        *
        */
 
-      Dia dia1 = new Dia();
+      Local localito=new Local();
+      MesaGrande mesota = new MesaGrande();
+      mesota.comprarMesa(localito);
 
     }
 

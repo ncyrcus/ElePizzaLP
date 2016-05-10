@@ -1,4 +1,4 @@
-package Clases;
+
 //
 public class MesaChica extends Mesa {
     private int capacidad = 5;

@@ -1,4 +1,3 @@
-package Clases;
 
 /**
  * Created by Neekuu on 28-04-2016.
@@ -11,7 +10,7 @@ public class DecoracionBonita extends Decoracion{
         local.setPopularidad(local.getPopularidad()-popularidad);
     }
 
-    @Override
+
     public void comprarDecoracion(Local local) {
        local.setDineroActual(local.getDineroActual()-costoDecoracionBonita);
        local.setPopularidad(local.getPopularidad()+popularidad);
