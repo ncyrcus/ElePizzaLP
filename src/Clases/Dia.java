@@ -1,4 +1,4 @@
-
+package Clases;
 
 public class Dia {
     private double clientesPotenciales;
@@ -44,7 +44,7 @@ public class Dia {
     }
 
     public double getCosto() {
-        return costo;
+        return this.costo;
     }
 
     public double getIngreso() {
@@ -79,12 +79,14 @@ public class Dia {
         this.clientesSentados = clientesSentados;
     }
 
-    public void setCosto(double costo) {
-        this.costo = costo;
+    public void setCosto(Dia dia,Comida comida)
+    {
+        this.costo=dia.getClientesAtendidos()*comida.getCostoPreparacion()+dia.getSueldo();
     }
 
-    public void setIngreso(double ingreso) {
-        this.ingreso = ingreso;
+    public void setIngreso(Dia dia,Comida comida)
+    {
+        this.ingreso=dia.getClientesFelices()*comida.getPrecioVenta();
     }
 
     public void setResultado(double resultado) {

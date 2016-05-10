@@ -1,4 +1,4 @@
-
+package Clases;
 import java.util.ArrayList;
 
 public class Local {
@@ -65,6 +65,7 @@ public class Local {
       }
   }
   public void comprarMesa(){
+
 
   }
 
