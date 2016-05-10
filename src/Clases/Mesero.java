@@ -9,7 +9,7 @@ public class  Mesero implements Empleado {
 
     @Override
     public void pagoSueldo(Dia dia) {
-        dia.setSueldo(dia.getSueldo()+ Sueldo);
+        dia.setSueldo(dia.getSueldo()+Sueldo);
 
     }
 
