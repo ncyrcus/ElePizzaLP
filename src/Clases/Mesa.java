@@ -5,7 +5,7 @@ public abstract class Mesa {
     private static int capacidad=9;
 
     public abstract void contabilizar(Dia dia);
-    public abstract void comprarMesa(Dia dia);
-    public abstract void venderMesa(Dia dia);
+    public abstract void comprarMesa(Local local);
+    public abstract void venderMesa(Local local);
 
 }
