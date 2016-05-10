@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="mesas modificadas">
+    <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Cocinero.java" afterPath="$PROJECT_DIR$/src/Clases/Cocinero.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Local.java" afterPath="$PROJECT_DIR$/src/Clases/Local.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/MesaChica.java" afterPath="$PROJECT_DIR$/src/Clases/MesaChica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/MesaGrande.java" afterPath="$PROJECT_DIR$/src/Clases/MesaGrande.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/MesaMediana.java" afterPath="$PROJECT_DIR$/src/Clases/MesaMediana.java" />
     </list>
     <list id="af12e739-e1d3-41fa-968e-2be3907826a4" name="New changelist" comment="?" />
     <ignored path="ElePizzaLP.iws" />
@@ -774,7 +769,7 @@
       <workItem from="1462502737338" duration="10306000" />
       <workItem from="1462832269770" duration="8617000" />
       <workItem from="1462849245450" duration="6323000" />
-      <workItem from="1462909131613" duration="1701000" />
+      <workItem from="1462909131613" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="Agregando atributos a día, e instanciando metodos gets y sets">
       <created>1462111678249</created>
@@ -854,12 +849,19 @@
       <option name="project" value="LOCAL" />
       <updated>1462894242344</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="mesas modificadas y funciones de local">
+      <created>1462912389103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1462912389103</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54740000" />
+    <option name="totallyTimeSpent" value="55176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -913,7 +915,8 @@
     <MESSAGE value="Decoración &#10;para el la llamada de local  creo que se puede usar la palabra self y  soluciona la llamada de local" />
     <MESSAGE value="Sample.fxml es para la interfaz" />
     <MESSAGE value="mesas modificadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="mesas modificadas" />
+    <MESSAGE value="mesas modificadas y funciones de local" />
+    <option name="LAST_COMMIT_MESSAGE" value="mesas modificadas y funciones de local" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
