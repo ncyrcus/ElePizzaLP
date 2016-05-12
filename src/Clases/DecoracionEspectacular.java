@@ -1,8 +1,4 @@
-package Clases;
 
-/**
- * Created by Neekuu on 28-04-2016.
- */
 public class DecoracionEspectacular extends Decoracion {
     private static int costoDecoracionEspectacular=2000;
     private static double popularidad = 1.0;

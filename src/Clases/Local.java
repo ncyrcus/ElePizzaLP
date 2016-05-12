@@ -1,4 +1,4 @@
-package Clases;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class Local {
 
     public Local()
     {
-    dineroActual=100000;
+    dineroActual=100000.0;
     popularidad = 0.0;
     popularidadBase = 2.0;
     listaDias = new ArrayList<Dia>();
@@ -120,7 +120,7 @@ public class Local {
     }
 
 
-    public boolean depedirMesero(){
+    public boolean despedirMesero(){
         if (cMesero.getCantidadDeMeseros()>0){
             int con=0;
             while (!(listaEmpleados.get(0) instanceof Mesero)){
@@ -193,8 +193,36 @@ public class Local {
                 listaMesas.remove(con);
                 return true;
             }
+        }
+        return false;
+    }
 
+    public boolean venderMesaMediana(){
+        if (cMesaMediana.getCantidadMesasMedianas()>0){
+            int con=0;
+            while (!(listaMesas.get(0) instanceof MesaMediana)){
+                con++;
+            }
+            if (listaMesas.get(con) instanceof MesaMediana){
+                listaMesas.get(con).venderMesa(this);
+                listaMesas.remove(con);
+                return true;
+            }
+        }
+        return false;
+    }
 
+    public boolean venderMesaGrande(){
+        if (cMesaGrande.getCantidadMesasGrandes()>0){
+            int con=0;
+            while (!(listaMesas.get(0) instanceof MesaGrande)){
+                con++;
+            }
+            if (listaMesas.get(con) instanceof MesaGrande){
+                listaMesas.get(con).venderMesa(this);
+                listaMesas.remove(con);
+                return true;
+            }
         }
         return false;
     }
@@ -287,6 +315,12 @@ public class Local {
         return false;
     }
 
+    public void nuevoDia(){
+        Dia dia=new Dia();
+        listaDias.add(dia);
+
+    }
+
     public void realizarDia(){
       nuevoDia();
       Dia diaActual=getDiaActual();
@@ -301,15 +335,6 @@ public class Local {
     }
 
 
-
-
-
-
-    public void nuevoDia(){
-        Dia dia=new Dia();
-        listaDias.add(dia);
-
-    }
 
 
 

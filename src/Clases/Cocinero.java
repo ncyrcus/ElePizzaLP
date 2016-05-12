@@ -1,8 +1,4 @@
-package Clases;
 
-/**
- * Created by Neekuu on 28-04-2016.
- */
 public class Cocinero implements Empleado {
     private static int Sueldo=1000;
     private static int CantidadDeCocineros=0;

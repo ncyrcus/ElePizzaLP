@@ -1,4 +1,3 @@
-package Clases;
 
 public class Dia {
     private double clientesPotenciales;

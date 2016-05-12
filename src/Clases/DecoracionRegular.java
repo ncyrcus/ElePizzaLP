@@ -1,7 +1,4 @@
-package Clases;
-/**
- * Created by Neekuu on 28-04-2016.
- */
+
 public class DecoracionRegular extends  Decoracion {
 
     private static int costoDecoracionRegular=500;
