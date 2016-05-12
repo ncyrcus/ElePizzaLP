@@ -4,8 +4,8 @@ package Clases;
  * Created by Neekuu on 28-04-2016.
  */
 public class Cocinero implements Empleado {
-    static int Sueldo=1000;
-
+    private static int Sueldo=1000;
+    private static int CantidadDeCocineros=0;
     @Override
     public void pagoSueldo(Dia dia) {
         dia.setSueldo(dia.getSueldo()+Sueldo);
@@ -18,4 +18,11 @@ public class Cocinero implements Empleado {
 
     }
 
+    public int getCantidadDeCocineros() {
+        return CantidadDeCocineros;
+    }
+
+    public void setCantidadDeCocineros(int cantidadCocineros) {
+        CantidadDeCocineros = cantidadCocineros;
+    }
 }

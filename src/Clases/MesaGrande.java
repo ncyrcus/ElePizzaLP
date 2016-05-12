@@ -38,6 +38,10 @@ public class MesaGrande extends Mesa {
     }
   }
 
+  public int getCantidadMesasGrandes() {
+    return cantidadMesasGrandes;
+  }
+
   public void contabilizar(Dia dia)
   {
     dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasGrandes*capacidad*10));

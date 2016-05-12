@@ -4,7 +4,8 @@ package Clases;
  */
 public class  Mesero implements Empleado {
 
-    static int Sueldo=500;
+    private static int Sueldo=500;
+    private static int cantidadDeMeseros=0;
 
 
     public void pagoSueldo(Dia dia) {
@@ -18,4 +19,11 @@ public class  Mesero implements Empleado {
 
     }
 
+    public int getCantidadDeMeseros() {
+        return cantidadDeMeseros;
+    }
+
+    public void setCantidadDeMeseros(int cantidadDeMeseros) {
+        Mesero.cantidadDeMeseros = cantidadDeMeseros;
+    }
 }

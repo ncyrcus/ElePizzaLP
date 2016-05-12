@@ -10,7 +10,7 @@ public class MesaChica extends Mesa {
     {
       if (cantidadMesa<=9)
       {
-        local.setDineroActual(local.getDineroActual()- costoMesaChica-100); //se agrega la compra a los costos del dia
+        local.setDineroActual(local.getDineroActual()- costoMesaChica-100);//se agrega la compra a los costos del dia
         cantidadMesa+=1; //se aumenta en 1 la cantidad de mesas del local
         cantidadMesasChicas+=1; //se aumenta en 1 la cantidad de mesas chicas compradas
         System.out.println("Se ha comprado una mesa chica, actualmente hay " + cantidadMesasChicas + " mesas chicas");
@@ -41,6 +41,10 @@ public class MesaChica extends Mesa {
     public void contabilizar(Dia dia)
     {
       dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasChicas*capacidad*10));
+    }
+
+    public int getCantidadMesasChicas() {
+        return cantidadMesasChicas;
     }
 
     public int getCapacidad() {

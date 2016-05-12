@@ -8,4 +8,7 @@ public abstract class Mesa {
     public abstract void comprarMesa(Local local);
     public abstract void venderMesa(Local local);
 
+    public int getCantidadMesa() {
+        return cantidadMesa;
+    }
 }

@@ -22,6 +22,14 @@ public class MesaMediana extends Mesa {
 
   }
 
+  public double getCostoMesaMediana() {
+    return costoMesaMediana;
+  }
+
+  public int getCantidadMesasMedianas() {
+    return cantidadMesasMedianas;
+  }
+
   public void venderMesa(Local local)
   {
     if(cantidadMesa>0)
