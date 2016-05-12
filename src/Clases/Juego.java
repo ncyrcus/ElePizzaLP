@@ -13,9 +13,7 @@ public class Juego {
        *
        */
 
-      Local localito=new Local();
-      MesaGrande mesota = new MesaGrande();
-      mesota.comprarMesa(localito);
+      
 
     }
 

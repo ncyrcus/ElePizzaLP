@@ -39,7 +39,7 @@ public class Dia {
         return clientesRecibidos;
     }
 
-    public int getClientesSentados() {
+    public int getClientesSentados(){
         return clientesSentados;
     }
 
@@ -79,18 +79,18 @@ public class Dia {
         this.clientesSentados = clientesSentados;
     }
 
-    public void setCosto(Dia dia,Comida comida)
+    public void setCosto(Comida comida)
     {
-        this.costo=dia.getClientesAtendidos()*comida.getCostoPreparacion()+dia.getSueldo();
+        this.costo=clientesAtendidos*comida.getCostoPreparacion()+sueldo;
     }
 
-    public void setIngreso(Dia dia,Comida comida)
+    public void setIngreso(Comida comida)
     {
-        this.ingreso=dia.getClientesFelices()*comida.getPrecioVenta();
+        this.ingreso=clientesFelices*comida.getPrecioVenta();
     }
 
-    public void setResultado(double resultado) {
-        this.resultado = resultado;
+    public void setResultado() {
+        this.resultado = ingreso-costo;
     }
 
     public void setSueldo(double sueldo) {

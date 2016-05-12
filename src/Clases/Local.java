@@ -14,6 +14,7 @@ public class Local {
     private MesaGrande cMesaGrande = new MesaGrande();
     private Comida pizzaDeLocal = new Comida();
     private double popularidad;
+    private double popularidadBase;
     private double dineroActual;
 
     private ArrayList<Dia> listaDias;
@@ -25,6 +26,7 @@ public class Local {
     {
     dineroActual=100000;
     popularidad = 0.0;
+    popularidadBase = 2.0;
     listaDias = new ArrayList<Dia>();
     listaEmpleados = new ArrayList<Empleado>();
     listaMesas = new ArrayList<Mesa>();
@@ -42,7 +44,7 @@ public class Local {
     }
 
     public void setPopularidad(double popularidad){
-      this.popularidad=popularidad;
+      this.popularidad=popularidad+popularidadBase;
     }
     public Dia getDiaActual( ){
       return listaDias.get(listaDias.size()-1);
@@ -63,13 +65,32 @@ public class Local {
       }
     }
 
+    private void contarMesas(){
+      for(int i=0;i<listaMesas.size();i++){
+          listaMesas.get(i).contabilizar(getDiaActual());
+      }
+    }
 
+    public  void aumentarNivel(){
+      if(listaDias.size()>5){
+        int contador=listaDias.size()-1;
+        boolean flag=true;
+        while(contador>listaDias.size()-7 && flag){
+          Dia dia = listaDias.get(contador);
+          if (!(dia.getClientesPotenciales()*0.8<=(double)dia.getClientesFelices())){
+                flag=false;
+          }
+        }
+        if (flag){
+          numeroEstrellas++;
+        }
+      }
+    }
     /*
     *Funciones Contratar , Despedir, Comprar, Vender y Mejorar
     *
      */
-    public void mejorarComida()
-    {
+    public void mejorarComida(){
         pizzaDeLocal.setPrecioVenta(pizzaDeLocal.getPrecioVenta()+ 20.0);
         pizzaDeLocal.setCostoPreparacion(pizzaDeLocal.getCostoPreparacion()+ 10.0);
         System.out.println("Se ha mejorado la comida del local, ahora se vende a : " + pizzaDeLocal.getPrecioVenta()+" pesos");
@@ -91,11 +112,13 @@ public class Local {
             listaEmpleados.add(b);
             cCocinero.setCantidadDeCocineros(cCocinero.getCantidadDeCocineros()+1);
             return true;
-        }catch (RuntimeException e){
-            return false;
-        }
+          }catch (RuntimeException e) {
+              return false;
+            }
+
 
     }
+
 
     public boolean depedirMesero(){
         if (cMesero.getCantidadDeMeseros()>0){
@@ -175,38 +198,7 @@ public class Local {
         }
         return false;
     }
-    public boolean venderMesaMediana(){
-        if (cMesaMediana.getCantidadMesasMedianas()>0){
-            int con=0;
-            while (!(listaMesas.get(0) instanceof MesaMediana)){
-                con++;
-            }
-            if (listaMesas.get(con) instanceof MesaMediana){
-                listaMesas.get(con).venderMesa(this);
-                listaMesas.remove(con);
-                return true;
-            }
 
-
-        }
-        return false;
-    }
-    public boolean venderMesaGrande(){
-        if (cMesaGrande.getCantidadMesasGrandes()>0){
-            int con=0;
-            while (!(listaMesas.get(0) instanceof MesaGrande)){
-                con++;
-            }
-            if (listaMesas.get(con) instanceof MesaGrande){
-                listaMesas.get(con).venderMesa(this);
-                listaMesas.remove(con);
-                return true;
-            }
-
-
-        }
-        return false;
-    }
 
     public boolean comprarDecoracionRegular(){
         try {
@@ -295,7 +287,18 @@ public class Local {
         return false;
     }
 
-
+    public void realizarDia(){
+      nuevoDia();
+      Dia diaActual=getDiaActual();
+      diaActual.setClientesPotenciales(popularidad+popularidadBase);
+      contarMesas();
+      supervisarEmpleo();
+      diaActual.setClientesFelices();
+      pagarAEmpleados();
+      diaActual.setIngreso(pizzaDeLocal);
+      diaActual.setCosto(pizzaDeLocal);
+      diaActual.setResultado();
+    }
 
 
 
