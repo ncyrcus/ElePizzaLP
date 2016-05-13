@@ -1,4 +1,4 @@
-
+package Clases;
 
 public abstract class Decoracion {
 

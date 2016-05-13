@@ -1,4 +1,4 @@
-
+package Clases;
 public abstract class Mesa {
     static int cantidadMesa=0;
     private static int capacidad=9;

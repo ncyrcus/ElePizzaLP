@@ -1,4 +1,4 @@
-
+package Clases;
 public class  Mesero implements Empleado {
 
     private static int Sueldo=500;
@@ -28,7 +28,7 @@ public class  Mesero implements Empleado {
     Retorno: metodo void sin retorno
     ************************************************/
     public void realizarEmpleo(Dia dia) {
-        dia.setClientesRecibidos(dia.getClientesRecibidos()+150);
+        dia.setClientesAtendidos(dia.getClientesAtendidos()+150);
 
     }
 

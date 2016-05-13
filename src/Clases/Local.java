@@ -1,4 +1,4 @@
-
+package Clases;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -464,7 +464,7 @@ public class Local {
         try {
             Decoracion a=new DecoracionRegular();
             a.comprarDecoracion(this);
-            cDR.setCantidadDR(cDR.getCantidadDR()+1);
+
             listaDecoraciones.add(a);
 
             return true;
@@ -486,7 +486,6 @@ public class Local {
             Decoracion a=new DecoracionBonita();
             a.comprarDecoracion(this);
             listaDecoraciones.add(a);
-            cDB.setCantidadDB(cDB.getCantidadDB()+1);
 
             return true;
         }catch (RuntimeException e){
@@ -507,7 +506,7 @@ public class Local {
             Decoracion a=new DecoracionEspectacular();
             a.comprarDecoracion(this);
             listaDecoraciones.add(a);
-            cDB.setCantidadDB(cDB.getCantidadDB()+1);
+
             return true;
         }catch (RuntimeException e){
             return false;
@@ -529,8 +528,9 @@ public class Local {
                 con++;
             }
             if (listaDecoraciones.get(con) instanceof DecoracionRegular){
+                listaDecoraciones.get(con).venderDecoracion(this);
                 listaDecoraciones.remove(con);
-                cDR.setCantidadDR(cDR.getCantidadDR()-1);
+
                 return true;
             }
         }
@@ -552,8 +552,9 @@ public class Local {
                 con++;
             }
             if (listaDecoraciones.get(con) instanceof DecoracionBonita){
+                listaDecoraciones.get(con).venderDecoracion(this);
                 listaDecoraciones.remove(con);
-                cDB.setCantidadDB(cDB.getCantidadDB()-1);
+
                 return true;
             }
 
@@ -577,8 +578,9 @@ public class Local {
                 con++;
             }
             if (listaDecoraciones.get(con) instanceof DecoracionEspectacular){
+                listaDecoraciones.get(con).venderDecoracion(this);
                 listaDecoraciones.remove(con);
-                cDE.setCantidadDE(cDE.getCantidadDE()-1);
+
                 return true;
             }
         }
@@ -611,7 +613,7 @@ public class Local {
     public void realizarDia(){
       nuevoDia();
       Dia diaActual=getDiaActual();
-      diaActual.setClientesPotenciales(popularidad+popularidadBase);
+      diaActual.setClientesPotenciales((popularidad+popularidadBase)*20);
       dineroActual=dineroActual+diaActual.getResultado();
       contarMesas();
       supervisarEmpleo();
@@ -620,13 +622,44 @@ public class Local {
       diaActual.setIngreso(pizzaDeLocal);
       diaActual.setCosto(pizzaDeLocal);
       diaActual.setResultado();
+      dineroActual=dineroActual+diaActual.getResultado();
+      aumentarNivel();
+
     }
 
+    public int getNumeroMesaChica(){
+        return cMesaChica.getCantidadMesasChicas();
+    }
+    public int getNumeroMesaMediana(){
+        return cMesaMediana.getCantidadMesasMedianas();
+    }
+    public int getNumeroMesaGrande(){
+        return cMesaGrande.getCantidadMesasGrandes();
+    }
+    public int getNumeroDecoracionRegular(){
+        return cDR.getCantidadDR();
+    }
+    public int getNumeroDecoracionBonita(){
+        return cDB.getCantidadDB();
+    }
+    public int getNumeroDecoracionEspectacular(){
+        return cDE.getCantidadDE();
+    }
 
+    public int getNumeroDia(){
+        return listaDias.size();
+    }
+    public int getNumeroEstrellas(){
+        return numeroEstrellas;
 
+    }
 
-
-
+    public int getPrecioComida(){
+        return (int)pizzaDeLocal.getPrecioVenta();
+    }
+    public int getCostoComida(){
+        return (int)pizzaDeLocal.getCostoPreparacion();
+    }
 
 
 

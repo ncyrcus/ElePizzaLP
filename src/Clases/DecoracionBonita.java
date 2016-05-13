@@ -1,4 +1,4 @@
-
+package Clases;
 public class DecoracionBonita extends Decoracion{
     private static int costoDecoracionBonita=1000;
     private static double popularidad = 0.5;
@@ -14,6 +14,7 @@ public class DecoracionBonita extends Decoracion{
       ************************************************/
     public void venderDecoracion(Local local) {
         local.setDineroActual(local.getDineroActual()+costoDecoracionBonita-150);
+        cantidadDB=cantidadDB-1;
         local.setPopularidad(local.getPopularidad()-popularidad);
     }
 
@@ -27,7 +28,9 @@ public class DecoracionBonita extends Decoracion{
       ************************************************/
     public void comprarDecoracion(Local local) {
        local.setDineroActual(local.getDineroActual()-costoDecoracionBonita);
+        cantidadDB=cantidadDB+1;
        local.setPopularidad(local.getPopularidad()+popularidad);
+
     }
 
     /******** Metodo: getCantidadDB ********************

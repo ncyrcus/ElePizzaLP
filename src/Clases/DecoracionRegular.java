@@ -1,3 +1,6 @@
+package Clases;
+
+import java.util.Calendar;
 
 public class DecoracionRegular extends  Decoracion {
 
@@ -16,6 +19,7 @@ public class DecoracionRegular extends  Decoracion {
     public void venderDecoracion(Local local) {
         local.setDineroActual(local.getDineroActual()+costoDecoracionRegular-75);
         local.setPopularidad(local.getPopularidad()-popularidad);
+        cantidadDR= cantidadDR-1;
     }
 
     /******** Metodo: comprarDecoracion ********************
@@ -29,6 +33,7 @@ public class DecoracionRegular extends  Decoracion {
     public void comprarDecoracion(Local local) {
         local.setDineroActual(local.getDineroActual()-costoDecoracionRegular);
         local.setPopularidad(local.getPopularidad()+popularidad);
+        cantidadDR=cantidadDR+1;
     }
 
 

@@ -1,4 +1,4 @@
-
+package Clases;
 public class Cocinero implements Empleado {
     private static int Sueldo=1000;
     private static int CantidadDeCocineros=0;

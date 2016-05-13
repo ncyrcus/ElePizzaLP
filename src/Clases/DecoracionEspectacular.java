@@ -1,4 +1,4 @@
-
+package Clases;
 public class DecoracionEspectacular extends Decoracion {
     private static int costoDecoracionEspectacular=2000;
     private static double popularidad = 1.0;
@@ -16,6 +16,7 @@ public class DecoracionEspectacular extends Decoracion {
     public void venderDecoracion(Local local) {
         local.setDineroActual(local.getDineroActual()+costoDecoracionEspectacular-300);
         local.setPopularidad(local.getPopularidad()-popularidad);
+        cantidadDE=cantidadDE-1;
     }
 
     /******** Metodo: comprarDecoracion ********************
@@ -28,6 +29,7 @@ public class DecoracionEspectacular extends Decoracion {
       ************************************************/
     public void comprarDecoracion(Local local) {
         local.setDineroActual(local.getDineroActual()-costoDecoracionEspectacular);
+        cantidadDE=cantidadDE+1;
         local.setPopularidad(local.getPopularidad()+popularidad);
     }
 
@@ -53,7 +55,7 @@ public class DecoracionEspectacular extends Decoracion {
 
       Retorno: metodo void sin retorno
       ************************************************/
-    public void setCantidadDE(int cantidadDE) {
-        DecoracionEspectacular.cantidadDE = cantidadDE;
+    public void setCantidadDE(int cantidadDE3) {
+        DecoracionEspectacular.cantidadDE = cantidadDE3;
     }
 }

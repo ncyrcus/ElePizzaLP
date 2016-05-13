@@ -1,4 +1,4 @@
-
+package Clases;
 public class Comida {
 
   private double precioVenta;
