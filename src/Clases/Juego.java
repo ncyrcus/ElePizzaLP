@@ -269,7 +269,7 @@ public class Juego {
 		frame.getContentPane().add(button_6);
 
     txtDineroActual = new JTextField();
-		txtDineroActual.setEditable(false);
+		txtDineroActual.setEditable(true);
 		txtDineroActual.setBounds(139, 303, 167, 24);
 		frame.getContentPane().add(txtDineroActual);
 		txtDineroActual.setColumns(10);
