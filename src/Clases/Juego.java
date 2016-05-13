@@ -224,7 +224,7 @@ public class Juego {
     JButton button_4 = new JButton("Decoracion Espectacular");
 		button_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-        pizzeria.venderDecoracioEspectacular();
+        pizzeria.venderDecoracionEspectacular();
         textField.setText("Se vendio una decoracion espectacular ");
 			}
 		});

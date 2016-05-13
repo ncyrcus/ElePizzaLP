@@ -22,6 +22,14 @@ public class Local {
     private ArrayList<Mesa> listaMesas;
     private ArrayList<Decoracion> listaDecoraciones;
 
+    /******** Metodo: Local ********************
+      Descripcion: Constructor de la clase Local
+
+      Parametros:
+      Sin Parametros
+
+      Retorno: Sin retorno
+      ************************************************/
     public Local()
     {
     dineroActual=100000.0;
@@ -33,44 +41,117 @@ public class Local {
     listaDecoraciones = new ArrayList<Decoracion>();
     }
 
+    /******** Metodo: getPopularidad ********************
+      Descripcion: retorna la popularidad del local
 
+      Parametros:
+      Sin Parametros
 
+      Retorno: retorna la variable popularidad de tipo double
+      ************************************************/
     public double getPopularidad() {
       return popularidad;
     }
 
+    /******** Metodo: getDineroActual ********************
+      Descripcion: retorna lel dinero actial del local
+
+      Parametros:
+      Sin Parametros
+
+      Retorno: retorna la variable dineroActual de tipo double
+      ************************************************/
     public double getDineroActual() {
       return dineroActual;
     }
 
+    /******** Metodo: setPopularidad ********************
+      Descripcion: modifica la popularidad del local
+
+      Parametros:
+      popularidad double
+
+      Retorno: Sin retorno
+      ************************************************/
     public void setPopularidad(double popularidad){
       this.popularidad=popularidad+popularidadBase;
     }
+
+    /******** Metodo: getDiaActual ********************
+      Descripcion: retorna el dia actual de la lista dia
+
+      Parametros:
+      Sin Parametros
+
+      Retorno: retorna el dia actual, de tipo Dia
+      ************************************************/
     public Dia getDiaActual( ){
       return listaDias.get(listaDias.size()-1);
     }
 
+    /******** Metodo: setDineroActual ********************
+      Descripcion: modifica el dinero actual del local
+
+      Parametros:
+      dineroActual double
+
+      Retorno: Sin retorno
+      ************************************************/
     public void setDineroActual(double dineroActual){
       this.dineroActual=dineroActual;
     }
 
+    /******** Metodo: setDineroActual ********************
+      Descripcion: recorre la lista de empleados para el pago del sueldo
+
+      Parametros:
+      Sin Parametros
+
+      Retorno: Sin retorno
+      ************************************************/
     private void pagarAEmpleados(){
       for(int i= 0; i<listaEmpleados.size();i++){
           listaEmpleados.get(i).pagoSueldo(getDiaActual());
       }
     }
+
+    /******** Metodo: supervisarEmpleo ********************
+      Descripcion: recorre la lista de empleados para realizar el empleo
+
+      Parametros:
+      Sin Parametros
+
+      Retorno: Sin retorno
+      ************************************************/
     private void supervisarEmpleo(){
       for(int i=0;i<listaEmpleados.size();i++){
           listaEmpleados.get(i).realizarEmpleo(getDiaActual());
       }
     }
 
+    /******** Metodo: contarMesas ********************
+      Descripcion: recorre la lista de mesas para contabilizarlas
+
+      Parametros:
+      Sin parametro
+
+      Retorno: Sin retorno
+      ************************************************/
     private void contarMesas(){
       for(int i=0;i<listaMesas.size();i++){
           listaMesas.get(i).contabilizar(getDiaActual());
       }
     }
 
+    /******** Metodo: aumentarNivel ********************
+      Descripcion: aumenta el nivel del local, verificando que hayan sido mas de 5 dias los clientes
+                  felices que potenciales
+
+      Parametros:
+      Sin parametro
+
+      Retorno: Sin retorno
+      ************************************************/
     public  void aumentarNivel(){
       if(listaDias.size()>5){
         int contador=listaDias.size()-1;
@@ -86,15 +167,29 @@ public class Local {
         }
       }
     }
-    /*
-    *Funciones Contratar , Despedir, Comprar, Vender y Mejorar
-    *
-     */
+
+    /******** Metodo: mejorarComida ********************
+      Descripcion: aumenta el precio de venta y costo de preparacion de la comida del local
+
+      Parametros:
+      Sin parametros
+
+      Retorno: Sin retorno
+      ************************************************/
     public void mejorarComida(){
         pizzaDeLocal.setPrecioVenta(pizzaDeLocal.getPrecioVenta()+ 20.0);
         pizzaDeLocal.setCostoPreparacion(pizzaDeLocal.getCostoPreparacion()+ 10.0);
         System.out.println("Se ha mejorado la comida del local, ahora se vende a : " + pizzaDeLocal.getPrecioVenta()+" pesos");
     }
+
+    /******** Metodo: contratarMesero ********************
+      Descripcion: contrata un mesero, agregandolo a la lista correspondiente
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente los meseros
+      ************************************************/
     public boolean contratarMesero(){
         try {
             Empleado a=new Mesero();
@@ -106,6 +201,15 @@ public class Local {
         }
 
     }
+
+    /******** Metodo: contratarCocinero ********************
+      Descripcion: contrata un cocinero, agregandolo a la lista correspondiente
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente los cocineros
+      ************************************************/
     public boolean contratarCocinero(){
         try {
             Empleado b=new Cocinero();
@@ -119,7 +223,14 @@ public class Local {
 
     }
 
+    /******** Metodo: despedirMesero ********************
+      Descripcion: despide un mesero, quitandolo de la lista correspondiente
 
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente los meseros
+      ************************************************/
     public boolean despedirMesero(){
         if (cMesero.getCantidadDeMeseros()>0){
             int con=0;
@@ -136,6 +247,15 @@ public class Local {
         }
         return false;
     }
+
+    /******** Metodo: despedirCocinero ********************
+      Descripcion: despide un Cocinero, quitandolo de la lista correspondiente
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente los cocineros
+      ************************************************/
     public boolean despedirCocinero(){
         if (cCocinero.getCantidadDeCocineros()>0){
             int con=0;
@@ -154,6 +274,14 @@ public class Local {
 
     }
 
+    /******** Metodo: comprarMesaChica ********************
+      Descripcion: compra una mesa chica, agregandola a la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las mesas
+      ************************************************/
     public boolean comprarMesaChica(){
         if(cMesaChica.getCantidadMesa()<9){
             Mesa nueva= new MesaChica();
@@ -163,6 +291,15 @@ public class Local {
         }
         return false;
     }
+
+    /******** Metodo: comprarMesaMediana ********************
+      Descripcion: compra una mesa mediana, agregandola a la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las mesas
+      ************************************************/
     public boolean comprarMesaMediana(){
         if(cMesaMediana.getCantidadMesa()<9){
             Mesa nueva= new MesaMediana();
@@ -172,6 +309,15 @@ public class Local {
         }
         return false;
     }
+
+    /******** Metodo: comprarMesaGrande ********************
+      Descripcion: compra una mesa grande, agregandola a la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las mesas
+      ************************************************/
     public boolean comprarMesaGrande(){
         if(cMesaGrande.getCantidadMesa()<9){
             Mesa nueva= new MesaGrande();
@@ -182,6 +328,15 @@ public class Local {
         return false;
     }
 
+
+    /******** Metodo: venderMesaChica ********************
+      Descripcion: vende una mesa chica, quitandola de la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las mesas
+      ************************************************/
     public boolean venderMesaChica(){
         if (cMesaChica.getCantidadMesasChicas()>0){
             int con=0;
@@ -196,6 +351,15 @@ public class Local {
         }
         return false;
     }
+
+    /******** Metodo: venderMesaMediana********************
+      Descripcion: vende una mesa mediana, quitandola de la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las mesas
+      ************************************************/
 
     public boolean venderMesaMediana(){
         if (cMesaMediana.getCantidadMesasMedianas()>0){
@@ -212,6 +376,15 @@ public class Local {
         return false;
     }
 
+
+    /******** Metodo: venderMesaGrande********************
+      Descripcion: vende una mesa grande, quitandola de la lista de mesas
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las mesas
+      ************************************************/
     public boolean venderMesaGrande(){
         if (cMesaGrande.getCantidadMesasGrandes()>0){
             int con=0;
@@ -228,6 +401,14 @@ public class Local {
     }
 
 
+    /******** Metodo: comprarDecoracionRegular********************
+      Descripcion: compra una decoracion regular, agregandola a la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las decoraciones
+      ************************************************/
     public boolean comprarDecoracionRegular(){
         try {
             Decoracion a=new DecoracionRegular();
@@ -239,9 +420,16 @@ public class Local {
         }catch (RuntimeException e){
             return false;
         }
-
-
     }
+
+    /******** Metodo: comprarDecoracionBonita********************
+      Descripcion: compra una decoracion bonita, agregandola a la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las decoraciones
+      ************************************************/
     public boolean comprarDecoracionBonita(){
         try {
             Decoracion a=new DecoracionBonita();
@@ -254,6 +442,15 @@ public class Local {
             return false;
         }
     }
+
+    /******** Metodo: comprarDecoracionEspectacular********************
+      Descripcion: compra una decoracion espectacular, agregandola a la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se agregaron correctamente las decoraciones
+      ************************************************/
     public boolean comprarDecoracionEspectacular(){
         try {
             Decoracion a=new DecoracionEspectacular();
@@ -266,6 +463,14 @@ public class Local {
         }
     }
 
+    /******** Metodo: venderDecoracionRegular********************
+      Descripcion: vende una decoracion regular, quitandola de la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las decoraciones
+      ************************************************/
     public boolean venderDecoracionRegular(){
         if (cDR.getCantidadDR()>0){
             int con=0;
@@ -277,11 +482,18 @@ public class Local {
                 cDR.setCantidadDR(cDR.getCantidadDR()-1);
                 return true;
             }
-
-
         }
         return false;
     }
+
+    /******** Metodo: venderDecoracionBonita********************
+      Descripcion: vende una decoracion bonita, quitandola de la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las decoraciones
+      ************************************************/
     public boolean venderDecoracionBonita(){
         if (cDB.getCantidadDB()>0){
             int con=0;
@@ -298,7 +510,16 @@ public class Local {
         }
         return false;
     }
-    public boolean venderDecoracioEspectacular(){
+
+    /******** Metodo: venderDecoracionEspectacular********************
+      Descripcion: vende una decoracion espectacular, quitandola de la lista de decoraciones
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna true si se quitaron correctamente las decoraciones
+      ************************************************/
+    public boolean venderDecoracionEspectacular(){
         if (cDE.getCantidadDE()>0){
             int con=0;
             while (!(listaDecoraciones.get(0) instanceof DecoracionEspectacular)){
@@ -309,18 +530,33 @@ public class Local {
                 cDE.setCantidadDE(cDE.getCantidadDE()-1);
                 return true;
             }
-
-
         }
         return false;
     }
 
+
+    /******** Metodo: venderDecoracionRegular********************
+      Descripcion: Crea una nueva instancia de dia, agregandola a la lista dias
+
+      Parametros:
+      Sin parametros
+
+      Retorno: Funcion void sin retorno
+      ************************************************/
     public void nuevoDia(){
         Dia dia=new Dia();
         listaDias.add(dia);
-
     }
 
+
+    /******** Metodo: venderDecoracionRegular********************
+      Descripcion: llama a las funciones necesarias para realizar el dia trabajado
+
+      Parametros:
+      Sin parametros
+
+      Retorno: Sin retorno
+      ************************************************/
     public void realizarDia(){
       nuevoDia();
       Dia diaActual=getDiaActual();

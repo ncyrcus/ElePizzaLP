@@ -5,6 +5,16 @@ public class MesaGrande extends Mesa {
   private double costoMesaGrande=1500.0;
 
 
+
+  /******** Metodo: comprarMesa ********************
+    Descripcion: compra una mesa grande para el local, disminuyendo el dinero y aumentando la cantidad
+                de mesas
+
+    Parametros:
+    local Local
+
+    Retorno: metodo void sin retorno
+    ************************************************/
   public void comprarMesa(Local local)
   {
     if (cantidadMesa<=9)
@@ -21,6 +31,16 @@ public class MesaGrande extends Mesa {
 
   }
 
+
+  /******** Metodo: venderMesa ********************
+    Descripcion: vende una mesa grande del local, aumentando el dinero y disminuyendo la cantidad
+                de mesas
+
+    Parametros:
+    local Local
+
+    Retorno: metodo void sin retorno
+    ************************************************/
   public void venderMesa(Local local)
   {
     if(cantidadMesa>0)
@@ -37,16 +57,42 @@ public class MesaGrande extends Mesa {
     }
   }
 
+  /******** Metodo: getCantidadMesasGrandes ********************
+    Descripcion: retorna la cantidad de mesas grandes del local
+
+    Parametros:
+    Sin Parametros
+
+    Retorno: retorna la variable cantidadMesasGrandes de tipo int
+    ************************************************/
+
   public int getCantidadMesasGrandes() {
     return cantidadMesasGrandes;
   }
 
+  /******** Metodo: contabilizar ********************
+    Descripcion: modifica la cantidad de clientes sentados
+
+    Parametros:
+    dia Dia
+
+    Retorno: metodo void sin retorno
+    ************************************************/
   public void contabilizar(Dia dia)
   {
     dia.setClientesSentados(dia.getClientesSentados()+(cantidadMesasGrandes*capacidad*10));
   }
 
-    public static int getCapacidad() {
+
+  /******** Metodo: getCapacidad ********************
+    Descripcion: retorna la capacidad de la mesa grande
+
+    Parametros:
+    Sin Parametros
+
+    Retorno: retorna la variable capacidad de tipo int
+    ************************************************/
+  public static int getCapacidad() {
         return capacidad;
     }
 }
