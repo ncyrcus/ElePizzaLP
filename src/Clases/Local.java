@@ -202,6 +202,22 @@ public class Local {
 
     }
 
+    public int cantidadMeseros(){
+      return cMesero.getCantidadDeMeseros();
+    }
+
+    public int cantidadMesasGrandes() {
+        return cMesaGrande.getCantidadMesasGrandes();
+    }
+
+    public int cantidadMesasMedianas() {
+        return cMesaMediana.getCantidadMesasMedianas();
+    }
+    public int cantidadMesasChicas() {
+        return cMesaChica.getCantidadMesasChicas();
+    }
+
+
     /******** Metodo: contratarCocinero ********************
       Descripcion: contrata un cocinero, agregandolo a la lista correspondiente
 
@@ -219,9 +235,12 @@ public class Local {
           }catch (RuntimeException e) {
               return false;
             }
-
-
     }
+
+    public int cantidadCocineros(){
+      return cCocinero.getCantidadDeCocineros();
+    }
+
 
     /******** Metodo: despedirMesero ********************
       Descripcion: despide un mesero, quitandolo de la lista correspondiente
@@ -561,6 +580,7 @@ public class Local {
       nuevoDia();
       Dia diaActual=getDiaActual();
       diaActual.setClientesPotenciales(popularidad+popularidadBase);
+      dineroActual=dineroActual+diaActual.getResultado();
       contarMesas();
       supervisarEmpleo();
       diaActual.setClientesFelices();

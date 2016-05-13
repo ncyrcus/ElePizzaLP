@@ -1,5 +1,4 @@
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
@@ -67,7 +66,10 @@ public class Juego {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
         pizzeria.contratarCocinero();
-        textField.setText("Se contrato un Cocinero");
+				String cadena = "";
+				int numero=pizzeria.cantidadCocineros();
+				cadena = String.valueOf(numero);
+        textField.setText("Se contrato un Cocinero, hay : " + cadena+" cocineros" );
 			}
 		});
 		btnNewButton.setBounds(139, 32, 129, 15);
@@ -84,7 +86,10 @@ public class Juego {
 		btnMesero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
         pizzeria.contratarMesero();
-        textField.setText("Se contrato un Mesero");
+				String cadena = "";
+				int numero=pizzeria.cantidadMeseros();
+				cadena = String.valueOf(numero);
+        textField.setText("Se contrato un Mesero, hay : " + cadena+" Meseros" );
 			}
 		});
 
@@ -99,7 +104,10 @@ public class Juego {
 		btnMesaGrande.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
         pizzeria.comprarMesaGrande();
-        textField.setText("Se compro una Mesa Grade!");
+				String cadena = "";
+				int numero=pizzeria.cantidadMesasGrandes();
+				cadena = String.valueOf(numero);
+        textField.setText("Se compro una Mesa Grande! hay: " + cadena + " mesas grandes en el local");
 			}
 		});
 		btnMesaGrande.setFont(new Font("Dialog", Font.BOLD, 10));
@@ -110,7 +118,10 @@ public class Juego {
 		btnMesaMediana.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
         pizzeria.comprarMesaMediana();
-        textField.setText("Se compro una Mesa Mediana!");
+				String cadena = "";
+				int numero=pizzeria.cantidadMesasMedianas();
+				cadena = String.valueOf(numero);
+        textField.setText("Se compro una Mesa Mediana! hay: " + cadena + " mesas medianas en el local");
 			}
 		});
 		btnMesaMediana.setFont(new Font("Dialog", Font.BOLD, 10));
@@ -121,7 +132,10 @@ public class Juego {
 		btnMesaChica.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
         pizzeria.comprarMesaChica();
-        textField.setText("Se compro una Mesa Chica!");
+				String cadena = "";
+				int numero=pizzeria.cantidadMesasChicas();
+				cadena = String.valueOf(numero);
+        textField.setText("Se compro una Mesa Chica! hay: " + cadena + " mesas chicas en el local");
 			}
 		});
 		btnMesaChica.setBounds(455, 85, 129, 15);
