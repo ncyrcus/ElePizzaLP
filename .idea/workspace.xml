@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/DecoracionBonita.java" afterPath="$PROJECT_DIR$/src/Clases/DecoracionBonita.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/DecoracionEspectacular.java" afterPath="$PROJECT_DIR$/src/Clases/DecoracionEspectacular.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/DecoracionRegular.java" afterPath="$PROJECT_DIR$/src/Clases/DecoracionRegular.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Interfaz.fxml" afterPath="$PROJECT_DIR$/src/Clases/Interfaz.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Local.java" afterPath="$PROJECT_DIR$/src/Clases/Local.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/cInterfaz.java" afterPath="$PROJECT_DIR$/src/Clases/cInterfaz.java" />
     </list>
     <list id="af12e739-e1d3-41fa-968e-2be3907826a4" name="New changelist" comment="?" />
     <ignored path="ElePizzaLP.iws" />
@@ -1024,7 +1018,7 @@
       <workItem from="1462923386076" duration="53000" />
       <workItem from="1462923507815" duration="18067000" />
       <workItem from="1463099509977" duration="29174000" />
-      <workItem from="1463189725446" duration="1458000" />
+      <workItem from="1463189725446" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="Agregando atributos a día, e instanciando metodos gets y sets">
       <created>1462111678249</created>
@@ -1139,12 +1133,19 @@
       <option name="project" value="LOCAL" />
       <updated>1463108094469</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CASI CASI">
+      <created>1463191276856</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1463191276856</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105873000" />
+    <option name="totallyTimeSpent" value="105898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -1229,7 +1230,8 @@
     <MESSAGE value="variados" />
     <MESSAGE value="funciones Contratar Despedir Comprar y Vender hechas" />
     <MESSAGE value="Comentarios de dia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comentarios de dia" />
+    <MESSAGE value="CASI CASI" />
+    <option name="LAST_COMMIT_MESSAGE" value="CASI CASI" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
