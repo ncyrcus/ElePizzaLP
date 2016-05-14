@@ -158,12 +158,14 @@ public class Local {
         boolean flag=true;
         while(contador>listaDias.size()-7 && flag){
           Dia dia = listaDias.get(contador);
+          contador--;
           if (!(dia.getClientesPotenciales()*0.8<=(double)dia.getClientesFelices())){
                 flag=false;
           }
         }
         if (flag){
           numeroEstrellas++;
+          popularidadBase=popularidadBase*2;
         }
       }
     }

@@ -144,6 +144,9 @@ public class cInterfaz {
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
         DiaInfo.setText(String.valueOf(catzzeria.getNumeroDia()));
         ESTInfo.setText(String.valueOf(catzzeria.getNumeroEstrellas()));
+        if(catzzeria.getNumeroEstrellas()==5){
+
+        }
 
     }
 
