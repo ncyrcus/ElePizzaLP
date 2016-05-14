@@ -201,18 +201,50 @@ public class Local {
         }
 
     }
+    /******** Metodo: cantidadMeseros ********************
+      Descripcion: retorna la cantidad de meseros contratados en el local
 
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna la variable de cantidad de meseros del local, de tipo int
+      ************************************************/
     public int cantidadMeseros(){
       return cMesero.getCantidadDeMeseros();
     }
 
+    /******** Metodo: cantidadMesasGrandes ********************
+      Descripcion: retorna la cantidad de mesas grandes presentes en el local
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna la variable de cantidad de mesas grandes del local, de tipo int
+      ************************************************/
     public int cantidadMesasGrandes() {
         return cMesaGrande.getCantidadMesasGrandes();
     }
 
+    /******** Metodo: cantidadMesasMedianas ********************
+      Descripcion: retorna la cantidad de mesas medianas presentes en el local
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna la variable de cantidad de mesas medianas del local, de tipo int
+      ************************************************/
     public int cantidadMesasMedianas() {
         return cMesaMediana.getCantidadMesasMedianas();
     }
+
+    /******** Metodo: cantidadMesasChicas ********************
+      Descripcion: retorna la cantidad de mesas chicas presentes en el local
+
+      Parametros:
+      Sin parametros
+
+      Retorno: retorna la variable de cantidad de mesas chicas del local, de tipo int
+      ************************************************/
     public int cantidadMesasChicas() {
         return cMesaChica.getCantidadMesasChicas();
     }
