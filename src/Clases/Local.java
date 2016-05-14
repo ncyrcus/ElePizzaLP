@@ -671,7 +671,15 @@ public class Local {
     }
 
 
-
+    public int getPrecioDeRe(){
+        return cDR.getCostoDecoracion();
+    }
+    public int getPrecioDeBo(){
+        return cDB.getCostoDecoracion();
+    }
+    public int getPrecioDeEs(){
+        return cDE.getCostoDecoracion();
+    }
 
 
 

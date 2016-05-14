@@ -56,4 +56,8 @@ public class DecoracionBonita extends Decoracion{
     public void setCantidadDB(int cantidadDB) {
         DecoracionBonita.cantidadDB = cantidadDB;
     }
+
+    public static int getCostoDecoracion() {
+        return costoDecoracionBonita;
+    }
 }

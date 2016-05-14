@@ -61,4 +61,8 @@ public class DecoracionRegular extends  Decoracion {
     public  void setCantidadDR(int cantidadDR) {
         DecoracionRegular.cantidadDR = cantidadDR;
     }
+
+    public static int getCostoDecoracion() {
+        return costoDecoracionRegular;
+    }
 }

@@ -14,13 +14,13 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="232.0">
                <children>
-                  <Button id="coMechi" fx:id="coMechi" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeChi" onMouseEntered="#inCoMeChi" onMouseExited="#outCoMechi" text="Comprar" />
-                  <Button id="veMeChi" fx:id="veMeChi" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeChi" onMouseEntered="#inVeMeChi" onMouseExited="#outVeMeChi" text="Vender" />
+                  <Button id="coMechi" fx:id="coMechi" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeChi" onMouseEntered="#inCoMeChi" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeChi" fx:id="veMeChi" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeChi" onMouseEntered="#inVeMeChi" onMouseExited="#outClickMesa" text="Vender" />
                   <Label id="nuMeChi" fx:id="nuMeChi" layoutX="37.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
-                  <Button id="coMeMe" fx:id="coMeMe" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeMe" onMouseEntered="#inCoMeMe" onMouseExited="#outCoMeMe" text="Comprar" />
-                  <Button id="veMeMe" fx:id="veMeMe" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeMeMe" onMouseEntered="#inCoVeMe" onMouseExited="#outCoVeMe" text="Vender" />
-                  <Button id="coMeGra" fx:id="coMeGra" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeGra" onMouseEntered="#inCoMeGra" onMouseExited="#outCoMeGra" text="Comprar" />
-                  <Button id="veMeGra" fx:id="veMeGra" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeGra" onMouseEntered="#inVeMeGra" onMouseExited="#outVeMeGra" text="Vender" />
+                  <Button id="coMeMe" fx:id="coMeMe" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeMe" onMouseEntered="#inCoMeMe" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeMe" fx:id="veMeMe" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeMeMe" onMouseEntered="#inCoVeMe" onMouseExited="#outClickMesa" text="Vender" />
+                  <Button id="coMeGra" fx:id="coMeGra" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeGra" onMouseEntered="#inCoMeGra" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeGra" fx:id="veMeGra" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeGra" onMouseEntered="#inVeMeGra" onMouseExited="#outClickMesa" text="Vender" />
                   <Label id="nuMeMe" fx:id="nuMeMe" layoutX="107.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="nuMeGra" fx:id="nuMeGra" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="38.0" text="Chicas" />
@@ -61,13 +61,13 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="232.0">
                <children>
-                  <Button id="coDeRe" fx:id="coDeRe" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeRe" onMouseEntered="#inCoDeRe" onMouseExited="#outCoDeRe" text="Comprar" />
-                  <Button id="veDeRe" fx:id="veDeRe" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeRe" onMouseEntered="#inVeDeRe" onMouseExited="#outVeDeRe" text="Vender" />
+                  <Button id="coDeRe" fx:id="coDeRe" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeRe" onMouseEntered="#inCoDeRe" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeRe" fx:id="veDeRe" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeRe" onMouseEntered="#inVeDeRe" onMouseExited="#outClickDeco" text="Vender" />
                   <Label id="nuDeRe" fx:id="nuDeRe" layoutX="37.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
-                  <Button id="coDeBo" fx:id="coDeBo" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeBo" onMouseEntered="#inCoDeBo" onMouseExited="#outCoDeBo" text="Comprar" />
-                  <Button id="veDeBo" fx:id="veDeBo" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeDeBo" onMouseEntered="#inVeDeBo" onMouseExited="#outVeDeBo" text="Vender" />
-                  <Button id="coDeEs" fx:id="coDeEs" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeEs" onMouseEntered="#inCoDeEs" onMouseExited="#outCoDeEs" text="Comprar" />
-                  <Button id="veDeEs" fx:id="veDeEs" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeEs" onMouseEntered="#inVeDeEs" onMouseExited="#outVeDeEs" text="Vender" />
+                  <Button id="coDeBo" fx:id="coDeBo" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeBo" onMouseEntered="#inCoDeBo" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeBo" fx:id="veDeBo" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeDeBo" onMouseEntered="#inVeDeBo" onMouseExited="#outClickDeco" text="Vender" />
+                  <Button id="coDeEs" fx:id="coDeEs" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeEs" onMouseEntered="#inCoDeEs" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeEs" fx:id="veDeEs" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeEs" onMouseEntered="#inVeDeEs" onMouseExited="#outClickDeco" text="Vender" />
                   <Label id="nuDeBo" fx:id="nuDeBo" layoutX="107.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="nuDeEs" fx:id="nuDeEs" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="NumbCocineros" layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="52.0" text="Regulares" />

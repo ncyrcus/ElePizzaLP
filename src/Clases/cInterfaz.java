@@ -31,6 +31,7 @@ public class cInterfaz {
     public Label RESInf;
     public Label DiaInfo;
     public Label laPreMe;
+    public Label laPreDe;
 
     Local catzzeria = new Local();
 
@@ -184,45 +185,43 @@ public class cInterfaz {
     }
 
 
-    public void outCoMechi(Event event) {
-    }
-
-    public void outVeMeChi(Event event) {
-    }
-
-
-
-
-
-
-
-    public void outCoMeMe(Event event) {
+    public void outClickMesa(Event event) {
+        laPreMe.setVisible(false);
     }
 
 
-
-
-
-
-
-    public void outCoVeMe(Event event) {
+    public void inCoDeRe(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioDeRe()));
     }
 
-
-
-
-
-
-    public void outCoMeGra(Event event) {
+    public void inCoDeBo(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioDeBo()));
     }
 
+    public void inCoDeEs(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioDeEs()));
+    }
 
+    public void inVeDeRe(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio venta:"+String.valueOf(catzzeria.getPrecioDeRe()-75));
+    }
 
+    public void inVeDeBo(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio venta:"+String.valueOf(catzzeria.getPrecioDeBo()-150));
+    }
 
+    public void inVeDeEs(Event event) {
+        laPreDe.setVisible(true);
+        laPreDe.setText("Precio venta:"+String.valueOf(catzzeria.getPrecioDeRe()-300));
+    }
 
-
-
-    public void outVeMeGra(Event event) {
+    public void outClickDeco(Event event) {
+        laPreDe.setVisible(false);
     }
 }
         
