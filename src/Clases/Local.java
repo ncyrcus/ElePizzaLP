@@ -628,61 +628,166 @@ public class Local {
       aumentarNivel();
 
     }
+    /******** Metodo: getNumeroMesaChica ********************
+        Descripcion: retorna la cantidad de mesas chicas presentes en el local
 
-    public int getNumeroMesaChica(){
-        return cMesaChica.getCantidadMesasChicas();
-    }
-    public int getNumeroMesaMediana(){
-        return cMesaMediana.getCantidadMesasMedianas();
-    }
-    public int getNumeroMesaGrande(){
-        return cMesaGrande.getCantidadMesasGrandes();
-    }
-    public int getNumeroDecoracionRegular(){
-        return cDR.getCantidadDR();
-    }
-    public int getNumeroDecoracionBonita(){
-        return cDB.getCantidadDB();
-    }
-    public int getNumeroDecoracionEspectacular(){
-        return cDE.getCantidadDE();
-    }
+        Parametros:
+        Sin parametros
 
-    public int getNumeroDia(){
-        return listaDias.size();
-    }
-    public int getNumeroEstrellas(){
-        return numeroEstrellas;
+        Retorno: retorna la variable de cantidad de mesas chicas del local, de tipo int
+        ************************************************/
 
-    }
+      public int getNumeroMesaChica(){
+          return cMesaChica.getCantidadMesasChicas();
+      }
 
-    public int getPrecioComida(){
-        return (int)pizzaDeLocal.getPrecioVenta();
-    }
-    public int getCostoComida(){
-        return (int)pizzaDeLocal.getCostoPreparacion();
-    }
-    public int getPrecioMesaChica(){
-        return (int)cMesaChica.getCostoMesa();
-    }
-    public int getPrecioMesaMediana(){
-        return (int)cMesaMediana.getCostoMesa();
-    }
-    public int getPrecioMesaGrande(){
-        return (int)cMesaGrande.getCostoMesa();
-    }
+      /******** Metodo: getNumeroMesaMediana ********************
+        Descripcion: retorna la cantidad de mesas medianas presentes en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna la variable de cantidad de mesas medianas del local, de tipo int
+        ************************************************/
+
+      public int getNumeroMesaMediana(){
+          return cMesaMediana.getCantidadMesasMedianas();
+      }
+
+      /******** Metodo: getNumeroMesaGrande ********************
+        Descripcion: retorna la cantidad de mesas grandes presentes en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna la variable de cantidad de mesas grandes del local, de tipo int
+        ************************************************/
+
+      public int getNumeroMesaGrande(){
+          return cMesaGrande.getCantidadMesasGrandes();
+      }
 
 
-    public int getPrecioDeRe(){
-        return cDR.getCostoDecoracion();
-    }
-    public int getPrecioDeBo(){
-        return cDB.getCostoDecoracion();
-    }
-    public int getPrecioDeEs(){
-        return cDE.getCostoDecoracion();
-    }
+      /******** Metodo: getNumeroDecoracionRegular ********************
+        Descripcion: retorna la cantidad decoraciones regulares presentes en el local
 
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna la variable de cantidad de decoraciones regulares del local, de tipo int
+        ************************************************/
+
+      public int getNumeroDecoracionRegular(){
+          return cDR.getCantidadDR();
+      }
+
+      /******** Metodo: getNumeroDecoracionBonita ********************
+        Descripcion: retorna la cantidad decoraciones bonitas presentes en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna la variable de cantidad de decoraciones bonitas del local, de tipo int
+        ************************************************/
+      public int getNumeroDecoracionBonita(){
+          return cDB.getCantidadDB();
+      }
+
+      /******** Metodo: getNumeroDecoracionEspectacular ********************
+        Descripcion: retorna la cantidad decoraciones espectaculares presentes en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna la variable de cantidad de decoraciones espectaculares del local, de tipo int
+        ************************************************/
+      public int getNumeroDecoracionEspectacular(){
+          return cDE.getCantidadDE();
+      }
+
+      /******** Metodo: getNumeroDia ********************
+        Descripcion: retorna la cantidad de dias que han transcurrido en el juego
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el largo de la lista de dias, de tipo int
+        ************************************************/
+      public int getNumeroDia(){
+          return listaDias.size();
+      }
+
+      /******** Metodo: getNumeroEstrellas ********************
+        Descripcion: retorna la cantidad de estrellas del local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el numero de estrellas del local, de tipo int
+        ************************************************/
+      public int getNumeroEstrellas(){
+          return numeroEstrellas;
+      }
+
+      /******** Metodo: getPrecioComida ********************
+        Descripcion: retorna el precio de la comida del local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el precio de venta de la comida del local, de tipo int
+        ************************************************/
+      public int getPrecioComida(){
+          return (int)pizzaDeLocal.getPrecioVenta();
+      }
+
+      /******** Metodo: getCostoComida********************
+        Descripcion: retorna el costo de preparacion de la comida del local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el costo que tiene preparar la comida del local, de tipo int
+        ************************************************/
+      public int getCostoComida(){
+          return (int)pizzaDeLocal.getCostoPreparacion();
+      }
+
+      /******** Metodo: getPrecioMesaChica ********************
+        Descripcion: retorna el precio de la mesa chica presente en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el costo de la mesa chica del local, de tipo int
+        ************************************************/
+      public int getPrecioMesaChica(){
+          return (int)cMesaChica.getCostoMesa();
+      }
+
+      /******** Metodo: getPrecioMesaMediana ********************
+        Descripcion: retorna el precio de la mesa mediana presente en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el costo de la mesa mediana del local, de tipo int
+        ************************************************/
+      public int getPrecioMesaMediana(){
+          return (int)cMesaMediana.getCostoMesa();
+      }
+
+      /******** Metodo: getPrecioMesaChica ********************
+        Descripcion: retorna el precio de la mesa chica presente en el local
+
+        Parametros:
+        Sin parametros
+
+        Retorno: retorna el costo de la mesa chica del local, de tipo int
+        ************************************************/
+      public int getPrecioMesaGrande(){
+          return (int)cMesaGrande.getCostoMesa();
+      }
 
 
 
