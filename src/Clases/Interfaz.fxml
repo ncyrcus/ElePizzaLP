@@ -150,6 +150,7 @@
             <Font size="22.0" />
          </font>
       </Label>
-      <Pane id="winner" fx:id="Winner" layoutX="72.0" layoutY="69.0" prefHeight="407.0" prefWidth="513.0" style="-fx-background-image: url(http://cosmetic-candy.com/wp-content/uploads/2011/01/Cat-winner.jpg);" visible="false" />
+      <Pane id="looser" fx:id="Looser" layoutX="108.0" layoutY="73.0" prefHeight="399.0" prefWidth="400.0" style="-fx-background-image: url(https://cdn.meme.am/instances/66403646.jpg);" visible="false" />
+      <Pane id="winner" fx:id="Winner" layoutX="82.0" layoutY="49.0" prefHeight="409.0" prefWidth="516.0" style="-fx-background-image: url(http://cosmetic-candy.com/wp-content/uploads/2011/01/Cat-winner.jpg); " visible="false" />
    </children>
 </Pane>

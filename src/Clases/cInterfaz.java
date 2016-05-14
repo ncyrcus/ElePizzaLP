@@ -34,8 +34,9 @@ public class cInterfaz {
     public Label laPreMe;
     public Label laPreDe;
     public Pane Winner;
+    public Pane Looser;
 
-    Local catzzeria = new Local();
+    private Local catzzeria = new Local();
 
     public void clickCoEmpCo(ActionEvent actionEvent) {
         catzzeria.contratarCocinero();
@@ -53,12 +54,18 @@ public class cInterfaz {
         catzzeria.comprarMesaChica();
         nuMeChi.setText( String.valueOf(catzzeria.getNumeroMesaChica()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
     }
 
     public void clickCoMeMe(ActionEvent actionEvent) {
         catzzeria.comprarMesaMediana();
         nuMeMe.setText(String.valueOf(catzzeria.getNumeroMesaMediana()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
     }
 
     public void clickVeMeMe(ActionEvent actionEvent) {
@@ -71,6 +78,9 @@ public class cInterfaz {
         catzzeria.comprarMesaGrande();
         nuMeGra.setText(String.valueOf(catzzeria.getNumeroMesaGrande()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
     }
 
 
@@ -88,6 +98,7 @@ public class cInterfaz {
     public void clickCoEmpMe(ActionEvent actionEvent) {
         catzzeria.contratarMesero();
         nuEmpMe.setText(String.valueOf(catzzeria.cantidadMeseros()));
+
     }
 
     public void clickDeEmpMe(ActionEvent actionEvent) {
@@ -99,6 +110,9 @@ public class cInterfaz {
         catzzeria.comprarDecoracionRegular();
         nuDeRe.setText(String.valueOf(catzzeria.getNumeroDecoracionRegular()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
     }
 
     public void clickVeDeRe(ActionEvent actionEvent) {
@@ -111,6 +125,9 @@ public class cInterfaz {
         catzzeria.comprarDecoracionBonita();
         nuDeBo.setText(String.valueOf(catzzeria.getNumeroDecoracionBonita()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
     }
 
     public void clickVeDeBo(ActionEvent actionEvent) {
@@ -123,6 +140,9 @@ public class cInterfaz {
         catzzeria.comprarDecoracionEspectacular();
         nuDeEs.setText(String.valueOf(catzzeria.getNumeroDecoracionEspectacular()));
         Dinero.setText(String.valueOf(catzzeria.getDineroActual()));
+        if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
+        }
 
     }
 
@@ -148,6 +168,9 @@ public class cInterfaz {
         ESTInfo.setText(String.valueOf(catzzeria.getNumeroEstrellas()));
         if(catzzeria.getNumeroEstrellas()==5){
             Winner.setVisible(true);
+        }
+        else if(catzzeria.getDineroActual()<=0){
+            Looser.setVisible(true);
         }
 
     }

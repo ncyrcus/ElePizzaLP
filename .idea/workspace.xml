@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="">
+    <list default="true" id="5b035b25-cf6a-4fde-8861-62d19ee64498" name="Default" comment="Finished">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ElePizzaLP/Clases/Interfaz.fxml" afterPath="$PROJECT_DIR$/out/production/ElePizzaLP/Clases/Interfaz.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Interfaz.fxml" afterPath="$PROJECT_DIR$/src/Clases/Interfaz.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/Local.java" afterPath="$PROJECT_DIR$/src/Clases/Local.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clases/cInterfaz.java" afterPath="$PROJECT_DIR$/src/Clases/cInterfaz.java" />
     </list>
     <list id="af12e739-e1d3-41fa-968e-2be3907826a4" name="New changelist" comment="?" />
@@ -30,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Local.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Local.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Clases/Local.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="157">
@@ -94,20 +92,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cInterfaz.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cInterfaz.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Clases/cInterfaz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="214" column="78" selection-start-line="214" selection-start-column="65" selection-end-line="214" selection-end-column="78" />
+            <state relative-caret-position="137">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#clickCoEmpCo#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickVeMeChi#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoMeChi#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoMeMe#0;class#cInterfaz#0" expanded="false" />
-                <element signature="method#clickVeMeMe#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoMeGra#0;class#cInterfaz#0" expanded="false" />
-                <element signature="method#clickVeMeGra#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickDeEmpCo#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoEmpMe#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickDeEmpMe#0;class#cInterfaz#0" expanded="false" />
@@ -117,26 +113,14 @@
                 <element signature="method#clickVeDeBo#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoDeEs#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickVeDeEs#0;class#cInterfaz#0" expanded="false" />
+                <element signature="method#clickTrabajar#0;class#cInterfaz#0" expanded="false" />
                 <element signature="method#clickCoMePi#0;class#cInterfaz#0" expanded="false" />
-                <element signature="e#6942#6943#0" expanded="true" />
-                <element signature="e#6983#6984#0" expanded="true" />
-                <element signature="e#8033#8034#0" expanded="true" />
-                <element signature="e#8074#8075#0" expanded="true" />
+                <element signature="e#7617#7618#0" expanded="true" />
+                <element signature="e#7658#7659#0" expanded="true" />
+                <element signature="e#8708#8709#0" expanded="true" />
+                <element signature="e#8749#8750#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interfaz.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Clases/Interfaz.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="152" column="36" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -224,6 +208,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Interfaz.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Clases/Interfaz.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -271,9 +268,9 @@
         <option value="$PROJECT_DIR$/src/Clases/DecoracionRegular.java" />
         <option value="$PROJECT_DIR$/src/Clases/DecoracionEspectacular.java" />
         <option value="$PROJECT_DIR$/src/Clases/DecoracionBonita.java" />
+        <option value="$PROJECT_DIR$/src/Clases/Local.java" />
         <option value="$PROJECT_DIR$/src/Clases/Interfaz.fxml" />
         <option value="$PROJECT_DIR$/src/Clases/cInterfaz.java" />
-        <option value="$PROJECT_DIR$/src/Clases/Local.java" />
       </list>
     </option>
   </component>
@@ -1023,7 +1020,7 @@
       <workItem from="1462923386076" duration="53000" />
       <workItem from="1462923507815" duration="18067000" />
       <workItem from="1463099509977" duration="29174000" />
-      <workItem from="1463189725446" duration="3059000" />
+      <workItem from="1463189725446" duration="3884000" />
     </task>
     <task id="LOCAL-00001" summary="Agregando atributos a día, e instanciando metodos gets y sets">
       <created>1462111678249</created>
@@ -1159,12 +1156,19 @@
       <option name="project" value="LOCAL" />
       <updated>1463192450764</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="winner Case">
+      <created>1463192875945</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1463192875945</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107474000" />
+    <option name="totallyTimeSpent" value="108299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -1172,7 +1176,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29185185" sideWeight="0.5122699" order="0" side_tool="true" content_ui="tabs" />
@@ -1223,7 +1227,9 @@
     <MESSAGE value="funciones Contratar Despedir Comprar y Vender hechas" />
     <MESSAGE value="Comentarios de dia" />
     <MESSAGE value="CASI CASI" />
-    <option name="LAST_COMMIT_MESSAGE" value="CASI CASI" />
+    <MESSAGE value="winner Case" />
+    <MESSAGE value="Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -1235,8 +1241,20 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Clases/cInterfaz.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Clases/cInterfaz.java</url>
+          <line>86</line>
+          <properties class="Clases.cInterfaz" method="clickVeMeGra" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1636,48 +1654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Clases/Interfaz.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="152" column="36" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Clases/cInterfaz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="214" column="78" selection-start-line="214" selection-start-column="65" selection-end-line="214" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#clickCoEmpCo#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeMeChi#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoMeChi#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoMeMe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeMeMe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoMeGra#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeMeGra#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickDeEmpCo#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoEmpMe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickDeEmpMe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoDeRe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeDeRe#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoDeBo#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeDeBo#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoDeEs#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickVeDeEs#0;class#cInterfaz#0" expanded="false" />
-            <element signature="method#clickCoMePi#0;class#cInterfaz#0" expanded="false" />
-            <element signature="e#6942#6943#0" expanded="true" />
-            <element signature="e#6983#6984#0" expanded="true" />
-            <element signature="e#8033#8034#0" expanded="true" />
-            <element signature="e#8074#8075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Clases/DecoracionBonita.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -1747,6 +1723,47 @@
             <element signature="e#25596#25597#0" expanded="true" />
             <element signature="e#25628#25629#0" expanded="true" />
             <element signature="e#25680#25681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Clases/Interfaz.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Clases/cInterfaz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#clickCoEmpCo#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickVeMeChi#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoMeChi#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoMeMe#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoMeGra#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickDeEmpCo#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoEmpMe#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickDeEmpMe#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoDeRe#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickVeDeRe#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoDeBo#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickVeDeBo#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoDeEs#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickVeDeEs#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickTrabajar#0;class#cInterfaz#0" expanded="false" />
+            <element signature="method#clickCoMePi#0;class#cInterfaz#0" expanded="false" />
+            <element signature="e#7617#7618#0" expanded="true" />
+            <element signature="e#7658#7659#0" expanded="true" />
+            <element signature="e#8708#8709#0" expanded="true" />
+            <element signature="e#8749#8750#0" expanded="true" />
           </folding>
         </state>
       </provider>
