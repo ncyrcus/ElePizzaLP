@@ -92,4 +92,8 @@ public class MesaMediana extends Mesa {
   public int getCapacidad() {
         return capacidad;
     }
+
+  public double getCostoMesa() {
+    return costoMesaMediana;
+  }
 }

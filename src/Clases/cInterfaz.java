@@ -1,6 +1,7 @@
 package Clases;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
@@ -29,6 +30,7 @@ public class cInterfaz {
     public Label SUEInf;
     public Label RESInf;
     public Label DiaInfo;
+    public Label laPreMe;
 
     Local catzzeria = new Local();
 
@@ -149,4 +151,78 @@ public class cInterfaz {
         nuCoPre.setText(String.valueOf(catzzeria.getPrecioComida()));
         nuCoCos.setText(String.valueOf(catzzeria.getCostoComida()));
     }
+
+    
+    
+    
+    
+    public void inCoMeChi(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioMesaChica()));
+
+    }
+    public void inVeMeChi(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio venta:"+String.valueOf(catzzeria.getPrecioMesaChica()-100));
+    }
+    public void inCoMeMe(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioMesaMediana()));
+
+    }
+    public void inCoVeMe(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio venta:"+String.valueOf(catzzeria.getPrecioMesaMediana()-200));
+    }
+    public void inCoMeGra(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioMesaGrande()));
+    }
+    public void inVeMeGra(Event event) {
+        laPreMe.setVisible(true);
+        laPreMe.setText("Precio compra:"+String.valueOf(catzzeria.getPrecioMesaGrande()-300));
+    }
+
+
+    public void outCoMechi(Event event) {
+    }
+
+    public void outVeMeChi(Event event) {
+    }
+
+
+
+
+
+
+
+    public void outCoMeMe(Event event) {
+    }
+
+
+
+
+
+
+
+    public void outCoVeMe(Event event) {
+    }
+
+
+
+
+
+
+    public void outCoMeGra(Event event) {
+    }
+
+
+
+
+
+
+
+    public void outVeMeGra(Event event) {
+    }
 }
+        

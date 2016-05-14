@@ -660,6 +660,15 @@ public class Local {
     public int getCostoComida(){
         return (int)pizzaDeLocal.getCostoPreparacion();
     }
+    public int getPrecioMesaChica(){
+        return (int)cMesaChica.getCostoMesa();
+    }
+    public int getPrecioMesaMediana(){
+        return (int)cMesaMediana.getCostoMesa();
+    }
+    public int getPrecioMesaGrande(){
+        return (int)cMesaGrande.getCostoMesa();
+    }
 
 
 
