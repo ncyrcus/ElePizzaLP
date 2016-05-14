@@ -153,7 +153,7 @@ public class Local {
       Retorno: Sin retorno
       ************************************************/
     public  void aumentarNivel(){
-      if(listaDias.size()>5){
+      if(listaDias.size()>5*numeroEstrellas){
         int contador=listaDias.size()-1;
         boolean flag=true;
         while(contador>listaDias.size()-7 && flag){
