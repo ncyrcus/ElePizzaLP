@@ -788,6 +788,15 @@ public class Local {
       public int getPrecioMesaGrande(){
           return (int)cMesaGrande.getCostoMesa();
       }
+      public int getPrecioDeRe(){
+          return (int)cDR.getCostoDecoracion();
+      }
+    public int getPrecioDeBo(){
+        return (int)cDB.getCostoDecoracion();
+    }
+    public int getPrecioDeEs(){
+        return (int)cDE.getCostoDecoracion();
+    }
 
 
 

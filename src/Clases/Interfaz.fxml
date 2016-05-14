@@ -150,5 +150,6 @@
             <Font size="22.0" />
          </font>
       </Label>
+      <Pane id="winner" fx:id="Winner" layoutX="72.0" layoutY="69.0" prefHeight="407.0" prefWidth="513.0" style="-fx-background-image: url(http://cosmetic-candy.com/wp-content/uploads/2011/01/Cat-winner.jpg);" visible="false" />
    </children>
 </Pane>

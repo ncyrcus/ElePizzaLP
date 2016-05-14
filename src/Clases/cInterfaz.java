@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
 
 /**
  * Created by Neekuu on 13-05-2016.
@@ -32,6 +33,7 @@ public class cInterfaz {
     public Label DiaInfo;
     public Label laPreMe;
     public Label laPreDe;
+    public Pane Winner;
 
     Local catzzeria = new Local();
 
@@ -145,7 +147,7 @@ public class cInterfaz {
         DiaInfo.setText(String.valueOf(catzzeria.getNumeroDia()));
         ESTInfo.setText(String.valueOf(catzzeria.getNumeroEstrellas()));
         if(catzzeria.getNumeroEstrellas()==5){
-
+            Winner.setVisible(true);
         }
 
     }

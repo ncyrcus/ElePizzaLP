@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -13,18 +14,23 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="232.0">
                <children>
-                  <Button id="coMechi" fx:id="coMechi" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeChi" text="Comprar" />
-                  <Button id="veMeChi" fx:id="veMeChi" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeChi" text="Vender" />
+                  <Button id="coMechi" fx:id="coMechi" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeChi" onMouseEntered="#inCoMeChi" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeChi" fx:id="veMeChi" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeChi" onMouseEntered="#inVeMeChi" onMouseExited="#outClickMesa" text="Vender" />
                   <Label id="nuMeChi" fx:id="nuMeChi" layoutX="37.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
-                  <Button id="coMeMe" fx:id="coMeMe" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeMe" text="Comprar" />
-                  <Button id="veMeMe" fx:id="veMeMe" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeMeMe" text="Vender" />
-                  <Button id="coMeGra" fx:id="coMeGra" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeGra" text="Comprar" />
-                  <Button id="veMeGra" fx:id="veMeGra" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeGra" text="Vender" />
+                  <Button id="coMeMe" fx:id="coMeMe" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeMe" onMouseEntered="#inCoMeMe" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeMe" fx:id="veMeMe" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeMeMe" onMouseEntered="#inCoVeMe" onMouseExited="#outClickMesa" text="Vender" />
+                  <Button id="coMeGra" fx:id="coMeGra" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoMeGra" onMouseEntered="#inCoMeGra" onMouseExited="#outClickMesa" text="Comprar" />
+                  <Button id="veMeGra" fx:id="veMeGra" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeMeGra" onMouseEntered="#inVeMeGra" onMouseExited="#outClickMesa" text="Vender" />
                   <Label id="nuMeMe" fx:id="nuMeMe" layoutX="107.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="nuMeGra" fx:id="nuMeGra" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="38.0" text="Chicas" />
                   <Label layoutX="77.0" layoutY="14.0" prefHeight="17.0" prefWidth="61.0" text="Medianas" />
                   <Label layoutX="159.0" layoutY="14.0" prefHeight="17.0" prefWidth="52.0" text="Grandes" />
+                  <Label id="laPreMe" fx:id="laPreMe" layoutX="97.0" layoutY="107.0" text="Label" visible="false">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Label>
                </children>
             </AnchorPane>
          </content>
@@ -44,7 +50,7 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="119.0">
                <children>
-                  <Button id="coEmpMe" fx:id="coEmpMe" layoutX="30.0" layoutY="42.0" mnemonicParsing="false" onAction="#clickCoEmpMe" text="Contratar" />
+                  <Button id="coEmpMe" fx:id="coEmpMe" layoutX="27.0" layoutY="42.0" mnemonicParsing="false" onAction="#clickCoEmpMe" text="Contratar" />
                   <Button id="deEmpMe" fx:id="deEmpMe" layoutX="28.0" layoutY="73.0" mnemonicParsing="false" onAction="#clickDeEmpMe" text="Despedir" />
                   <Label id="nuEmpMe" fx:id="nuEmpMe" layoutX="56.0" layoutY="121.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                </children>
@@ -55,18 +61,23 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="232.0">
                <children>
-                  <Button id="coDeRe" fx:id="coDeRe" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeRe" text="Comprar" />
-                  <Button id="veDeRe" fx:id="veDeRe" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeRe" text="Vender" />
+                  <Button id="coDeRe" fx:id="coDeRe" layoutX="9.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeRe" onMouseEntered="#inCoDeRe" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeRe" fx:id="veDeRe" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeRe" onMouseEntered="#inVeDeRe" onMouseExited="#outClickDeco" text="Vender" />
                   <Label id="nuDeRe" fx:id="nuDeRe" layoutX="37.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
-                  <Button id="coDeBo" fx:id="coDeBo" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeBo" text="Comprar" />
-                  <Button id="veDeBo" fx:id="veDeBo" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeDeBo" text="Vender" />
-                  <Button id="coDeEs" fx:id="coDeEs" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeEs" text="Comprar" />
-                  <Button id="veDeEs" fx:id="veDeEs" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeEs" text="Vender" />
+                  <Button id="coDeBo" fx:id="coDeBo" layoutX="79.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeBo" onMouseEntered="#inCoDeBo" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeBo" fx:id="veDeBo" layoutX="83.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickVeDeBo" onMouseEntered="#inVeDeBo" onMouseExited="#outClickDeco" text="Vender" />
+                  <Button id="coDeEs" fx:id="coDeEs" layoutX="158.0" layoutY="43.0" mnemonicParsing="false" onAction="#clickCoDeEs" onMouseEntered="#inCoDeEs" onMouseExited="#outClickDeco" text="Comprar" />
+                  <Button id="veDeEs" fx:id="veDeEs" layoutX="162.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickVeDeEs" onMouseEntered="#inVeDeEs" onMouseExited="#outClickDeco" text="Vender" />
                   <Label id="nuDeBo" fx:id="nuDeBo" layoutX="107.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="nuDeEs" fx:id="nuDeEs" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="7.0" text="0" />
                   <Label id="NumbCocineros" layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="52.0" text="Regulares" />
                   <Label id="NumbCocineros" layoutX="86.0" layoutY="14.0" prefHeight="17.0" prefWidth="43.0" text="Bonitas" textAlignment="CENTER" />
                   <Label id="NumbCocineros" layoutX="151.0" layoutY="14.0" prefHeight="17.0" prefWidth="78.0" text="Espectaculares" />
+                  <Label id="laPreDe" fx:id="laPreDe" layoutX="97.0" layoutY="107.0" text="Label" visible="false">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Label>
                </children>
             </AnchorPane>
          </content>
